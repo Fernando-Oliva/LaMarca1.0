@@ -92,16 +92,16 @@
     <Compile Include="Clases\EstadisticasGuerrero.cs" />
     <Compile Include="Clases\ImagenesCriaturas.cs" />
     <Compile Include="Clases\Textos.cs" />
-    <Compile Include="CriaturasPersonalizadas.cs">
+    <Compile Include="Forms\CriaturasPersonalizadas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CriaturasPersonalizadas.Designer.cs">
+    <Compile Include="Forms\CriaturasPersonalizadas.Designer.cs">
       <DependentUpon>CriaturasPersonalizadas.cs</DependentUpon>
     </Compile>
-    <Compile Include="EquipoDescripcion.cs">
+    <Compile Include="Forms\EquipoDescripcion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EquipoDescripcion.Designer.cs">
+    <Compile Include="Forms\EquipoDescripcion.Designer.cs">
       <DependentUpon>EquipoDescripcion.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -110,16 +110,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Info.cs">
+    <Compile Include="Forms\Info.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Info.Designer.cs">
+    <Compile Include="Forms\Info.Designer.cs">
       <DependentUpon>Info.cs</DependentUpon>
     </Compile>
-    <Compile Include="Localizacion.cs">
+    <Compile Include="Forms\Localizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Localizacion.Designer.cs">
+    <Compile Include="Forms\Localizacion.Designer.cs">
       <DependentUpon>Localizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="MordorDataSet.Designer.cs">
@@ -127,39 +127,39 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MordorDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="PnatallaDM.cs">
+    <Compile Include="Forms\PnatallaDM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PnatallaDM.Designer.cs">
+    <Compile Include="Forms\PnatallaDM.Designer.cs">
       <DependentUpon>PnatallaDM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pnj.cs">
+    <Compile Include="Forms\Pnj.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pnj.Designer.cs">
+    <Compile Include="Forms\Pnj.Designer.cs">
       <DependentUpon>Pnj.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CriaturasPersonalizadas.resx">
+    <EmbeddedResource Include="Forms\CriaturasPersonalizadas.resx">
       <DependentUpon>CriaturasPersonalizadas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EquipoDescripcion.resx">
+    <EmbeddedResource Include="Forms\EquipoDescripcion.resx">
       <DependentUpon>EquipoDescripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Info.resx">
+    <EmbeddedResource Include="Forms\Info.resx">
       <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Localizacion.resx">
+    <EmbeddedResource Include="Forms\Localizacion.resx">
       <DependentUpon>Localizacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PnatallaDM.resx">
+    <EmbeddedResource Include="Forms\PnatallaDM.resx">
       <DependentUpon>PnatallaDM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pnj.resx">
+    <EmbeddedResource Include="Forms\Pnj.resx">
       <DependentUpon>Pnj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -199,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CalaveraIcono.ico" />
+    <None Include="Resources\La Puerta Negra.jpg" />
     <None Include="Imagenes API\RobledaMap.jpg" />
     <None Include="Imagenes API\Aboleth.jpg" />
     <None Include="Imagenes API\abrir.png" />

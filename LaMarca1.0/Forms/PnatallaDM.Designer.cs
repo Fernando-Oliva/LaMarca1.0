@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaDM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTienda = new System.Windows.Forms.TabPage();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbBusquedaTransporte = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -41,7 +40,6 @@
             this.tbBusquedaArmadura = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbBusquedaArmas = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvTransporte = new System.Windows.Forms.DataGridView();
@@ -72,10 +70,67 @@
             this.lClase = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.cbPnj = new System.Windows.Forms.ComboBox();
+            this.lNombrePnj = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label26 = new System.Windows.Forms.Label();
+            this.cbConjuros = new System.Windows.Forms.ComboBox();
+            this.dgvConjuros = new System.Windows.Forms.DataGridView();
+            this.Nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Alcance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btMenos = new System.Windows.Forms.Button();
+            this.btMas = new System.Windows.Forms.Button();
+            this.lHabilidadII = new System.Windows.Forms.Label();
+            this.lHabilidadI = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lTesoro = new System.Windows.Forms.Label();
+            this.lAlineamiento = new System.Windows.Forms.Label();
+            this.lArmasCombII = new System.Windows.Forms.Label();
+            this.lArmasCombI = new System.Windows.Forms.Label();
+            this.cbCriaturas = new System.Windows.Forms.ComboBox();
+            this.lNombreC = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lCriaturaAlineam = new System.Windows.Forms.Label();
+            this.lNombreCriatura = new System.Windows.Forms.Label();
+            this.lCriaturaHabilII = new System.Windows.Forms.Label();
+            this.lCriaturaHabilI = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lCriaturaTesoro = new System.Windows.Forms.Label();
+            this.lCriaturaArmasII = new System.Windows.Forms.Label();
+            this.lCriaturaArmasI = new System.Windows.Forms.Label();
+            this.cbSelecCriatura = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.cbD20 = new System.Windows.Forms.ComboBox();
+            this.cbD12 = new System.Windows.Forms.ComboBox();
+            this.cbD6 = new System.Windows.Forms.ComboBox();
+            this.cbD8 = new System.Windows.Forms.ComboBox();
+            this.cbD4 = new System.Windows.Forms.ComboBox();
+            this.tbD4 = new System.Windows.Forms.TextBox();
+            this.btLanzarD4 = new System.Windows.Forms.Button();
+            this.tbD6 = new System.Windows.Forms.TextBox();
+            this.btLanzarD6 = new System.Windows.Forms.Button();
+            this.tbD8 = new System.Windows.Forms.TextBox();
+            this.btLanzarD8 = new System.Windows.Forms.Button();
+            this.tbD10 = new System.Windows.Forms.TextBox();
+            this.btLanzarD10 = new System.Windows.Forms.Button();
+            this.tbD12 = new System.Windows.Forms.TextBox();
+            this.btLanzarD12 = new System.Windows.Forms.Button();
+            this.lCriticoPifia = new System.Windows.Forms.Label();
+            this.tbResultadoD20 = new System.Windows.Forms.TextBox();
+            this.btLanzarD20 = new System.Windows.Forms.Button();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.gbLugares = new System.Windows.Forms.GroupBox();
+            this.lRobleda = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pbPnj = new System.Windows.Forms.PictureBox();
             this.panel43 = new System.Windows.Forms.Panel();
             this.lNivel = new System.Windows.Forms.Label();
-            this.lNombrePnj = new System.Windows.Forms.Label();
             this.pConjuros = new System.Windows.Forms.Panel();
             this.panel41 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
@@ -95,32 +150,11 @@
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
             this.lVidaPnj = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.cbConjuros = new System.Windows.Forms.ComboBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.dgvConjuros = new System.Windows.Forms.DataGridView();
-            this.Nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Alcance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.btMenos = new System.Windows.Forms.Button();
-            this.btMas = new System.Windows.Forms.Button();
-            this.lHabilidadII = new System.Windows.Forms.Label();
-            this.lHabilidadI = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lTesoro = new System.Windows.Forms.Label();
-            this.lAlineamiento = new System.Windows.Forms.Label();
             this.pbCriatura = new System.Windows.Forms.PictureBox();
-            this.lArmasCombII = new System.Windows.Forms.Label();
-            this.lArmasCombI = new System.Windows.Forms.Label();
-            this.cbCriaturas = new System.Windows.Forms.ComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.lSSort = new System.Windows.Forms.Label();
             this.lSAliD = new System.Windows.Forms.Label();
@@ -144,20 +178,9 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.lDG = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.lNombreC = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.lCriaturaAlineam = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.lNombreCriatura = new System.Windows.Forms.Label();
-            this.lCriaturaHabilII = new System.Windows.Forms.Label();
-            this.lCriaturaHabilI = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lCriaturaTesoro = new System.Windows.Forms.Label();
             this.pbImagenCriatura = new System.Windows.Forms.PictureBox();
-            this.lCriaturaArmasII = new System.Windows.Forms.Label();
-            this.lCriaturaArmasI = new System.Windows.Forms.Label();
-            this.cbSelecCriatura = new System.Windows.Forms.ComboBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.lCriaturaSorti = new System.Windows.Forms.Label();
             this.lCriaturaAliDrag = new System.Windows.Forms.Label();
@@ -180,53 +203,37 @@
             this.lCriaturaAtaque = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
             this.lCriaturaDG = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.cbD20 = new System.Windows.Forms.ComboBox();
-            this.cbD12 = new System.Windows.Forms.ComboBox();
-            this.cbD6 = new System.Windows.Forms.ComboBox();
-            this.cbD8 = new System.Windows.Forms.ComboBox();
-            this.cbD4 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tbD4 = new System.Windows.Forms.TextBox();
-            this.btLanzarD4 = new System.Windows.Forms.Button();
-            this.tbD6 = new System.Windows.Forms.TextBox();
-            this.btLanzarD6 = new System.Windows.Forms.Button();
-            this.tbD8 = new System.Windows.Forms.TextBox();
-            this.btLanzarD8 = new System.Windows.Forms.Button();
-            this.tbD10 = new System.Windows.Forms.TextBox();
-            this.btLanzarD10 = new System.Windows.Forms.Button();
-            this.tbD12 = new System.Windows.Forms.TextBox();
-            this.btLanzarD12 = new System.Windows.Forms.Button();
-            this.lCriticoPifia = new System.Windows.Forms.Label();
-            this.tbResultadoD20 = new System.Windows.Forms.TextBox();
-            this.btLanzarD20 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.cbD10 = new System.Windows.Forms.ComboBox();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.panel44 = new System.Windows.Forms.Panel();
             this.pPuertaNegra = new System.Windows.Forms.Panel();
             this.pRobleda = new System.Windows.Forms.Panel();
+            this.lPuertaNegra = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabTienda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransporte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArmaduras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArmas)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConjuros)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage8.SuspendLayout();
+            this.gbLugares.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPnj)).BeginInit();
             this.panel43.SuspendLayout();
             this.panel38.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel34.SuspendLayout();
             this.panel32.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConjuros)).BeginInit();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCriatura)).BeginInit();
             this.panel18.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -236,7 +243,6 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenCriatura)).BeginInit();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
@@ -246,9 +252,7 @@
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel28.SuspendLayout();
-            this.tabPage5.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
             this.panel44.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -262,7 +266,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
@@ -292,33 +296,22 @@
             this.tabTienda.Controls.Add(this.label1);
             this.tabTienda.Controls.Add(this.dgvArmaduras);
             this.tabTienda.Controls.Add(this.dgvArmas);
-            this.tabTienda.Location = new System.Drawing.Point(4, 26);
+            this.tabTienda.Location = new System.Drawing.Point(4, 27);
             this.tabTienda.Margin = new System.Windows.Forms.Padding(4);
             this.tabTienda.Name = "tabTienda";
             this.tabTienda.Padding = new System.Windows.Forms.Padding(4);
-            this.tabTienda.Size = new System.Drawing.Size(1487, 921);
+            this.tabTienda.Size = new System.Drawing.Size(1853, 920);
             this.tabTienda.TabIndex = 0;
             this.tabTienda.Text = "Tienda";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(513, 594);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 217);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(1040, 569);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 17);
+            this.label8.Size = new System.Drawing.Size(113, 20);
             this.label8.TabIndex = 24;
             this.label8.Text = "Busqueda: ";
             // 
@@ -327,18 +320,18 @@
             this.tbBusquedaTransporte.Location = new System.Drawing.Point(1163, 566);
             this.tbBusquedaTransporte.Margin = new System.Windows.Forms.Padding(4);
             this.tbBusquedaTransporte.Name = "tbBusquedaTransporte";
-            this.tbBusquedaTransporte.Size = new System.Drawing.Size(197, 23);
+            this.tbBusquedaTransporte.Size = new System.Drawing.Size(197, 25);
             this.tbBusquedaTransporte.TabIndex = 23;
             this.tbBusquedaTransporte.TextChanged += new System.EventHandler(this.tbBusquedaTransporte_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(153, 569);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 17);
+            this.label7.Size = new System.Drawing.Size(113, 20);
             this.label7.TabIndex = 22;
             this.label7.Text = "Busqueda: ";
             // 
@@ -347,18 +340,18 @@
             this.tbBusquedaEquipo.Location = new System.Drawing.Point(276, 566);
             this.tbBusquedaEquipo.Margin = new System.Windows.Forms.Padding(4);
             this.tbBusquedaEquipo.Name = "tbBusquedaEquipo";
-            this.tbBusquedaEquipo.Size = new System.Drawing.Size(197, 23);
+            this.tbBusquedaEquipo.Size = new System.Drawing.Size(197, 25);
             this.tbBusquedaEquipo.TabIndex = 21;
             this.tbBusquedaEquipo.TextChanged += new System.EventHandler(this.tbBusquedaEquipo_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(1133, 16);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 17);
+            this.label6.Size = new System.Drawing.Size(113, 20);
             this.label6.TabIndex = 20;
             this.label6.Text = "Busqueda: ";
             // 
@@ -367,18 +360,18 @@
             this.tbBusquedaArmadura.Location = new System.Drawing.Point(1256, 12);
             this.tbBusquedaArmadura.Margin = new System.Windows.Forms.Padding(4);
             this.tbBusquedaArmadura.Name = "tbBusquedaArmadura";
-            this.tbBusquedaArmadura.Size = new System.Drawing.Size(197, 23);
+            this.tbBusquedaArmadura.Size = new System.Drawing.Size(197, 25);
             this.tbBusquedaArmadura.TabIndex = 19;
             this.tbBusquedaArmadura.TextChanged += new System.EventHandler(this.tbBusquedaArmadura_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(287, 16);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 17);
+            this.label5.Size = new System.Drawing.Size(113, 20);
             this.label5.TabIndex = 18;
             this.label5.Text = "Busqueda: ";
             // 
@@ -387,28 +380,19 @@
             this.tbBusquedaArmas.Location = new System.Drawing.Point(409, 12);
             this.tbBusquedaArmas.Margin = new System.Windows.Forms.Padding(4);
             this.tbBusquedaArmas.Name = "tbBusquedaArmas";
-            this.tbBusquedaArmas.Size = new System.Drawing.Size(197, 23);
+            this.tbBusquedaArmas.Size = new System.Drawing.Size(197, 25);
             this.tbBusquedaArmas.TabIndex = 17;
             this.tbBusquedaArmas.TextChanged += new System.EventHandler(this.tbBusquedaArmas_TextChanged);
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.Location = new System.Drawing.Point(409, 379);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(393, 105);
-            this.panel6.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(837, 569);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.Size = new System.Drawing.Size(151, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "TRANSPORTE";
             // 
@@ -416,11 +400,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 569);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "EQUIPO";
             // 
@@ -443,6 +427,7 @@
             this.dgvTransporte.Name = "dgvTransporte";
             this.dgvTransporte.ReadOnly = true;
             this.dgvTransporte.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvTransporte.RowTemplate.Height = 24;
             this.dgvTransporte.Size = new System.Drawing.Size(320, 300);
             this.dgvTransporte.TabIndex = 5;
             // 
@@ -477,6 +462,7 @@
             this.dgvEquipo.Name = "dgvEquipo";
             this.dgvEquipo.ReadOnly = true;
             this.dgvEquipo.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvEquipo.RowTemplate.Height = 24;
             this.dgvEquipo.Size = new System.Drawing.Size(459, 300);
             this.dgvEquipo.TabIndex = 4;
             this.dgvEquipo.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvEquipo_RowHeaderMouseClick);
@@ -504,11 +490,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(841, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 20);
+            this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "ARMADURAS";
             // 
@@ -516,11 +502,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("UnZialish", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
+            this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "ARMAS";
             // 
@@ -545,6 +531,7 @@
             this.dgvArmaduras.Name = "dgvArmaduras";
             this.dgvArmaduras.ReadOnly = true;
             this.dgvArmaduras.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvArmaduras.RowTemplate.Height = 24;
             this.dgvArmaduras.Size = new System.Drawing.Size(612, 300);
             this.dgvArmaduras.TabIndex = 1;
             // 
@@ -581,14 +568,14 @@
             this.dgvArmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArmas.BackgroundColor = System.Drawing.Color.White;
             this.dgvArmas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvArmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArmas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NombreArma,
@@ -601,6 +588,7 @@
             this.dgvArmas.Name = "dgvArmas";
             this.dgvArmas.ReadOnly = true;
             this.dgvArmas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvArmas.RowTemplate.Height = 24;
             this.dgvArmas.Size = new System.Drawing.Size(592, 300);
             this.dgvArmas.TabIndex = 0;
             // 
@@ -639,9 +627,10 @@
             this.tabPage1.Controls.Add(this.lClase);
             this.tabPage1.Controls.Add(this.label25);
             this.tabPage1.Controls.Add(this.cbPnj);
+            this.tabPage1.Controls.Add(this.lNombrePnj);
+            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.pbPnj);
             this.tabPage1.Controls.Add(this.panel43);
-            this.tabPage1.Controls.Add(this.lNombrePnj);
             this.tabPage1.Controls.Add(this.pConjuros);
             this.tabPage1.Controls.Add(this.panel41);
             this.tabPage1.Controls.Add(this.panel38);
@@ -653,12 +642,11 @@
             this.tabPage1.Controls.Add(this.panel35);
             this.tabPage1.Controls.Add(this.panel31);
             this.tabPage1.Controls.Add(this.panel32);
-            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.panel4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 26);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1487, 921);
+            this.tabPage1.Size = new System.Drawing.Size(1853, 920);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Crear PNJs";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -729,7 +717,7 @@
             this.label25.Location = new System.Drawing.Point(47, 170);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(149, 17);
+            this.label25.Size = new System.Drawing.Size(177, 19);
             this.label25.TabIndex = 44;
             this.label25.Text = "Selecciona un PNJ:";
             // 
@@ -739,10 +727,787 @@
             this.cbPnj.Location = new System.Drawing.Point(248, 166);
             this.cbPnj.Margin = new System.Windows.Forms.Padding(4);
             this.cbPnj.Name = "cbPnj";
-            this.cbPnj.Size = new System.Drawing.Size(160, 25);
+            this.cbPnj.Size = new System.Drawing.Size(160, 26);
             this.cbPnj.TabIndex = 43;
             this.cbPnj.SelectedIndexChanged += new System.EventHandler(this.cbPnj_SelectedIndexChanged);
             this.cbPnj.Click += new System.EventHandler(this.cbPnj_Click);
+            // 
+            // lNombrePnj
+            // 
+            this.lNombrePnj.AutoSize = true;
+            this.lNombrePnj.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNombrePnj.Location = new System.Drawing.Point(549, 135);
+            this.lNombrePnj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lNombrePnj.Name = "lNombrePnj";
+            this.lNombrePnj.Size = new System.Drawing.Size(0, 46);
+            this.lNombrePnj.TabIndex = 40;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label11.Font = new System.Drawing.Font("UnZialish", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(592, 48);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(271, 52);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Nuevo PNJ";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.pictureBox3);
+            this.tabPage7.Controls.Add(this.label26);
+            this.tabPage7.Controls.Add(this.cbConjuros);
+            this.tabPage7.Controls.Add(this.dgvConjuros);
+            this.tabPage7.Controls.Add(this.pictureBox4);
+            this.tabPage7.Controls.Add(this.panel30);
+            this.tabPage7.Location = new System.Drawing.Point(4, 27);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(1853, 920);
+            this.tabPage7.TabIndex = 7;
+            this.tabPage7.Text = "Libro de Conjuros";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(11, 486);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(292, 19);
+            this.label26.TabIndex = 25;
+            this.label26.Text = "Selecciona el Libro de Conjuros";
+            // 
+            // cbConjuros
+            // 
+            this.cbConjuros.FormattingEnabled = true;
+            this.cbConjuros.Items.AddRange(new object[] {
+            "Arcanos",
+            "Divinos"});
+            this.cbConjuros.Location = new System.Drawing.Point(340, 482);
+            this.cbConjuros.Margin = new System.Windows.Forms.Padding(4);
+            this.cbConjuros.Name = "cbConjuros";
+            this.cbConjuros.Size = new System.Drawing.Size(160, 26);
+            this.cbConjuros.TabIndex = 24;
+            this.cbConjuros.SelectedIndexChanged += new System.EventHandler(this.cbConjuros_SelectedIndexChanged);
+            // 
+            // dgvConjuros
+            // 
+            this.dgvConjuros.AllowUserToAddRows = false;
+            this.dgvConjuros.AllowUserToDeleteRows = false;
+            this.dgvConjuros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvConjuros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConjuros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nivel,
+            this.Nombre,
+            this.Alcance,
+            this.Duracion,
+            this.Descripcion});
+            this.dgvConjuros.Location = new System.Drawing.Point(11, 535);
+            this.dgvConjuros.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvConjuros.Name = "dgvConjuros";
+            this.dgvConjuros.ReadOnly = true;
+            this.dgvConjuros.RowTemplate.Height = 24;
+            this.dgvConjuros.Size = new System.Drawing.Size(1463, 263);
+            this.dgvConjuros.TabIndex = 18;
+            // 
+            // Nivel
+            // 
+            this.Nivel.HeaderText = "Nivel";
+            this.Nivel.Name = "Nivel";
+            this.Nivel.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Alcance
+            // 
+            this.Alcance.HeaderText = "Alcance";
+            this.Alcance.Name = "Alcance";
+            this.Alcance.ReadOnly = true;
+            // 
+            // Duracion
+            // 
+            this.Duracion.HeaderText = "Duracion";
+            this.Duracion.Name = "Duracion";
+            this.Duracion.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btMenos);
+            this.tabPage3.Controls.Add(this.btMas);
+            this.tabPage3.Controls.Add(this.lHabilidadII);
+            this.tabPage3.Controls.Add(this.lHabilidadI);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.lTesoro);
+            this.tabPage3.Controls.Add(this.lAlineamiento);
+            this.tabPage3.Controls.Add(this.lArmasCombII);
+            this.tabPage3.Controls.Add(this.lArmasCombI);
+            this.tabPage3.Controls.Add(this.cbCriaturas);
+            this.tabPage3.Controls.Add(this.lNombreC);
+            this.tabPage3.Controls.Add(this.pbCriatura);
+            this.tabPage3.Controls.Add(this.panel18);
+            this.tabPage3.Controls.Add(this.panel17);
+            this.tabPage3.Controls.Add(this.panel16);
+            this.tabPage3.Controls.Add(this.panel15);
+            this.tabPage3.Controls.Add(this.panel14);
+            this.tabPage3.Controls.Add(this.panel13);
+            this.tabPage3.Controls.Add(this.panel12);
+            this.tabPage3.Controls.Add(this.panel11);
+            this.tabPage3.Controls.Add(this.panel10);
+            this.tabPage3.Controls.Add(this.panel9);
+            this.tabPage3.Controls.Add(this.panel8);
+            this.tabPage3.Controls.Add(this.panel3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1853, 920);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "Bestiario";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btMenos
+            // 
+            this.btMenos.Location = new System.Drawing.Point(695, 161);
+            this.btMenos.Margin = new System.Windows.Forms.Padding(4);
+            this.btMenos.Name = "btMenos";
+            this.btMenos.Size = new System.Drawing.Size(28, 28);
+            this.btMenos.TabIndex = 38;
+            this.btMenos.Text = "-";
+            this.btMenos.UseVisualStyleBackColor = true;
+            this.btMenos.Click += new System.EventHandler(this.btMenos_Click);
+            // 
+            // btMas
+            // 
+            this.btMas.Location = new System.Drawing.Point(695, 134);
+            this.btMas.Margin = new System.Windows.Forms.Padding(4);
+            this.btMas.Name = "btMas";
+            this.btMas.Size = new System.Drawing.Size(28, 28);
+            this.btMas.TabIndex = 37;
+            this.btMas.Text = "+";
+            this.btMas.UseVisualStyleBackColor = true;
+            this.btMas.Click += new System.EventHandler(this.btMas_Click);
+            // 
+            // lHabilidadII
+            // 
+            this.lHabilidadII.AutoSize = true;
+            this.lHabilidadII.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lHabilidadII.Location = new System.Drawing.Point(560, 572);
+            this.lHabilidadII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lHabilidadII.Name = "lHabilidadII";
+            this.lHabilidadII.Size = new System.Drawing.Size(93, 28);
+            this.lHabilidadII.TabIndex = 36;
+            this.lHabilidadII.Text = "label11";
+            // 
+            // lHabilidadI
+            // 
+            this.lHabilidadI.AutoSize = true;
+            this.lHabilidadI.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lHabilidadI.Location = new System.Drawing.Point(560, 548);
+            this.lHabilidadI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lHabilidadI.Name = "lHabilidadI";
+            this.lHabilidadI.Size = new System.Drawing.Size(104, 28);
+            this.lHabilidadI.TabIndex = 35;
+            this.lHabilidadI.Text = "label10";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(51, 159);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(238, 19);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Selecciona una Criatura:";
+            // 
+            // lTesoro
+            // 
+            this.lTesoro.AutoSize = true;
+            this.lTesoro.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTesoro.Location = new System.Drawing.Point(1152, 346);
+            this.lTesoro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lTesoro.Name = "lTesoro";
+            this.lTesoro.Size = new System.Drawing.Size(50, 28);
+            this.lTesoro.TabIndex = 30;
+            this.lTesoro.Text = "24";
+            // 
+            // lAlineamiento
+            // 
+            this.lAlineamiento.AutoSize = true;
+            this.lAlineamiento.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAlineamiento.Location = new System.Drawing.Point(1261, 54);
+            this.lAlineamiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lAlineamiento.Name = "lAlineamiento";
+            this.lAlineamiento.Size = new System.Drawing.Size(93, 28);
+            this.lAlineamiento.TabIndex = 33;
+            this.lAlineamiento.Text = "label9";
+            // 
+            // lArmasCombII
+            // 
+            this.lArmasCombII.AutoSize = true;
+            this.lArmasCombII.Font = new System.Drawing.Font("UnZialish", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lArmasCombII.Location = new System.Drawing.Point(816, 426);
+            this.lArmasCombII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lArmasCombII.Name = "lArmasCombII";
+            this.lArmasCombII.Size = new System.Drawing.Size(90, 23);
+            this.lArmasCombII.TabIndex = 31;
+            this.lArmasCombII.Text = "label10";
+            // 
+            // lArmasCombI
+            // 
+            this.lArmasCombI.AutoSize = true;
+            this.lArmasCombI.Font = new System.Drawing.Font("UnZialish", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lArmasCombI.Location = new System.Drawing.Point(816, 400);
+            this.lArmasCombI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lArmasCombI.Name = "lArmasCombI";
+            this.lArmasCombI.Size = new System.Drawing.Size(81, 23);
+            this.lArmasCombI.TabIndex = 30;
+            this.lArmasCombI.Text = "label9";
+            // 
+            // cbCriaturas
+            // 
+            this.cbCriaturas.FormattingEnabled = true;
+            this.cbCriaturas.Items.AddRange(new object[] {
+            "Aboleth",
+            "Ankheg"});
+            this.cbCriaturas.Location = new System.Drawing.Point(316, 153);
+            this.cbCriaturas.Margin = new System.Windows.Forms.Padding(4);
+            this.cbCriaturas.Name = "cbCriaturas";
+            this.cbCriaturas.Size = new System.Drawing.Size(160, 26);
+            this.cbCriaturas.TabIndex = 29;
+            this.cbCriaturas.Text = "Aboleth";
+            this.cbCriaturas.SelectedIndexChanged += new System.EventHandler(this.cbCriaturas_SelectedIndexChanged);
+            // 
+            // lNombreC
+            // 
+            this.lNombreC.AutoSize = true;
+            this.lNombreC.Font = new System.Drawing.Font("UnZialish", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNombreC.Location = new System.Drawing.Point(629, 44);
+            this.lNombreC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lNombreC.Name = "lNombreC";
+            this.lNombreC.Size = new System.Drawing.Size(333, 52);
+            this.lNombreC.TabIndex = 17;
+            this.lNombreC.Text = "- CRIATURA -";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.lCriaturaAlineam);
+            this.tabPage4.Controls.Add(this.lNombreCriatura);
+            this.tabPage4.Controls.Add(this.lCriaturaHabilII);
+            this.tabPage4.Controls.Add(this.lCriaturaHabilI);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.lCriaturaTesoro);
+            this.tabPage4.Controls.Add(this.lCriaturaArmasII);
+            this.tabPage4.Controls.Add(this.lCriaturaArmasI);
+            this.tabPage4.Controls.Add(this.cbSelecCriatura);
+            this.tabPage4.Controls.Add(this.label10);
+            this.tabPage4.Controls.Add(this.panel29);
+            this.tabPage4.Controls.Add(this.pbImagenCriatura);
+            this.tabPage4.Controls.Add(this.panel19);
+            this.tabPage4.Controls.Add(this.panel20);
+            this.tabPage4.Controls.Add(this.panel21);
+            this.tabPage4.Controls.Add(this.panel22);
+            this.tabPage4.Controls.Add(this.panel23);
+            this.tabPage4.Controls.Add(this.panel24);
+            this.tabPage4.Controls.Add(this.panel25);
+            this.tabPage4.Controls.Add(this.panel26);
+            this.tabPage4.Controls.Add(this.panel27);
+            this.tabPage4.Controls.Add(this.panel28);
+            this.tabPage4.Controls.Add(this.panel2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1853, 920);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Crear Criaturas";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // lCriaturaAlineam
+            // 
+            this.lCriaturaAlineam.AutoSize = true;
+            this.lCriaturaAlineam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCriaturaAlineam.Location = new System.Drawing.Point(1433, 250);
+            this.lCriaturaAlineam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lCriaturaAlineam.Name = "lCriaturaAlineam";
+            this.lCriaturaAlineam.Size = new System.Drawing.Size(0, 24);
+            this.lCriaturaAlineam.TabIndex = 57;
+            // 
+            // lNombreCriatura
+            // 
+            this.lNombreCriatura.AutoSize = true;
+            this.lNombreCriatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNombreCriatura.Location = new System.Drawing.Point(584, 129);
+            this.lNombreCriatura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lNombreCriatura.Name = "lNombreCriatura";
+            this.lNombreCriatura.Size = new System.Drawing.Size(0, 46);
+            this.lNombreCriatura.TabIndex = 55;
+            // 
+            // lCriaturaHabilII
+            // 
+            this.lCriaturaHabilII.AutoSize = true;
+            this.lCriaturaHabilII.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCriaturaHabilII.Location = new System.Drawing.Point(533, 678);
+            this.lCriaturaHabilII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lCriaturaHabilII.Name = "lCriaturaHabilII";
+            this.lCriaturaHabilII.Size = new System.Drawing.Size(0, 24);
+            this.lCriaturaHabilII.TabIndex = 54;
+            // 
+            // lCriaturaHabilI
+            // 
+            this.lCriaturaHabilI.AutoSize = true;
+            this.lCriaturaHabilI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCriaturaHabilI.Location = new System.Drawing.Point(533, 654);
+            this.lCriaturaHabilI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lCriaturaHabilI.Name = "lCriaturaHabilI";
+            this.lCriaturaHabilI.Size = new System.Drawing.Size(0, 24);
+            this.lCriaturaHabilI.TabIndex = 53;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(36, 151);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(238, 19);
+            this.label13.TabIndex = 52;
+            this.label13.Text = "Selecciona una Criatura:";
+            // 
+            // lCriaturaTesoro
+            // 
+            this.lCriaturaTesoro.AutoSize = true;
+            this.lCriaturaTesoro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCriaturaTesoro.Location = new System.Drawing.Point(1145, 454);
+            this.lCriaturaTesoro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lCriaturaTesoro.Name = "lCriaturaTesoro";
+            this.lCriaturaTesoro.Size = new System.Drawing.Size(0, 36);
+            this.lCriaturaTesoro.TabIndex = 49;
+            // 
+            // lCriaturaArmasII
+            // 
+            this.lCriaturaArmasII.AutoSize = true;
+            this.lCriaturaArmasII.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCriaturaArmasII.Location = new System.Drawing.Point(789, 534);
+            this.lCriaturaArmasII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lCriaturaArmasII.Name = "lCriaturaArmasII";
+            this.lCriaturaArmasII.Size = new System.Drawing.Size(0, 20);
+            this.lCriaturaArmasII.TabIndex = 50;
+            // 
+            // lCriaturaArmasI
+            // 
+            this.lCriaturaArmasI.AutoSize = true;
+            this.lCriaturaArmasI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCriaturaArmasI.Location = new System.Drawing.Point(789, 508);
+            this.lCriaturaArmasI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lCriaturaArmasI.Name = "lCriaturaArmasI";
+            this.lCriaturaArmasI.Size = new System.Drawing.Size(0, 20);
+            this.lCriaturaArmasI.TabIndex = 48;
+            // 
+            // cbSelecCriatura
+            // 
+            this.cbSelecCriatura.FormattingEnabled = true;
+            this.cbSelecCriatura.Location = new System.Drawing.Point(301, 145);
+            this.cbSelecCriatura.Margin = new System.Windows.Forms.Padding(4);
+            this.cbSelecCriatura.Name = "cbSelecCriatura";
+            this.cbSelecCriatura.Size = new System.Drawing.Size(160, 26);
+            this.cbSelecCriatura.TabIndex = 47;
+            this.cbSelecCriatura.SelectedIndexChanged += new System.EventHandler(this.cbSelecCriatura_SelectedIndexChanged);
+            this.cbSelecCriatura.Click += new System.EventHandler(this.cbSelecCriatura_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label10.Font = new System.Drawing.Font("UnZialish", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(707, 59);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(396, 52);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Nueva Criatura";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.cbD20);
+            this.tabPage5.Controls.Add(this.cbD12);
+            this.tabPage5.Controls.Add(this.cbD6);
+            this.tabPage5.Controls.Add(this.cbD8);
+            this.tabPage5.Controls.Add(this.cbD4);
+            this.tabPage5.Controls.Add(this.tbD4);
+            this.tabPage5.Controls.Add(this.btLanzarD4);
+            this.tabPage5.Controls.Add(this.tbD6);
+            this.tabPage5.Controls.Add(this.btLanzarD6);
+            this.tabPage5.Controls.Add(this.tbD8);
+            this.tabPage5.Controls.Add(this.btLanzarD8);
+            this.tabPage5.Controls.Add(this.tbD10);
+            this.tabPage5.Controls.Add(this.btLanzarD10);
+            this.tabPage5.Controls.Add(this.tbD12);
+            this.tabPage5.Controls.Add(this.btLanzarD12);
+            this.tabPage5.Controls.Add(this.lCriticoPifia);
+            this.tabPage5.Controls.Add(this.tbResultadoD20);
+            this.tabPage5.Controls.Add(this.btLanzarD20);
+            this.tabPage5.Controls.Add(this.panel1);
+            this.tabPage5.Controls.Add(this.panel7);
+            this.tabPage5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage5.Location = new System.Drawing.Point(4, 27);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1853, 920);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "Dados";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // cbD20
+            // 
+            this.cbD20.FormattingEnabled = true;
+            this.cbD20.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cbD20.Location = new System.Drawing.Point(1103, 247);
+            this.cbD20.Margin = new System.Windows.Forms.Padding(4);
+            this.cbD20.Name = "cbD20";
+            this.cbD20.Size = new System.Drawing.Size(45, 25);
+            this.cbD20.TabIndex = 22;
+            this.cbD20.Text = "1";
+            // 
+            // cbD12
+            // 
+            this.cbD12.FormattingEnabled = true;
+            this.cbD12.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cbD12.Location = new System.Drawing.Point(909, 247);
+            this.cbD12.Margin = new System.Windows.Forms.Padding(4);
+            this.cbD12.Name = "cbD12";
+            this.cbD12.Size = new System.Drawing.Size(45, 25);
+            this.cbD12.TabIndex = 21;
+            this.cbD12.Text = "1";
+            // 
+            // cbD6
+            // 
+            this.cbD6.FormattingEnabled = true;
+            this.cbD6.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cbD6.Location = new System.Drawing.Point(909, 55);
+            this.cbD6.Margin = new System.Windows.Forms.Padding(4);
+            this.cbD6.Name = "cbD6";
+            this.cbD6.Size = new System.Drawing.Size(45, 25);
+            this.cbD6.TabIndex = 19;
+            this.cbD6.Text = "1";
+            // 
+            // cbD8
+            // 
+            this.cbD8.FormattingEnabled = true;
+            this.cbD8.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cbD8.Location = new System.Drawing.Point(1103, 55);
+            this.cbD8.Margin = new System.Windows.Forms.Padding(4);
+            this.cbD8.Name = "cbD8";
+            this.cbD8.Size = new System.Drawing.Size(45, 25);
+            this.cbD8.TabIndex = 18;
+            this.cbD8.Text = "1";
+            // 
+            // cbD4
+            // 
+            this.cbD4.FormattingEnabled = true;
+            this.cbD4.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cbD4.Location = new System.Drawing.Point(697, 55);
+            this.cbD4.Margin = new System.Windows.Forms.Padding(4);
+            this.cbD4.Name = "cbD4";
+            this.cbD4.Size = new System.Drawing.Size(45, 25);
+            this.cbD4.TabIndex = 17;
+            this.cbD4.Text = "1";
+            // 
+            // tbD4
+            // 
+            this.tbD4.BackColor = System.Drawing.Color.White;
+            this.tbD4.Enabled = false;
+            this.tbD4.Font = new System.Drawing.Font("UnZialish", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbD4.Location = new System.Drawing.Point(565, 105);
+            this.tbD4.Margin = new System.Windows.Forms.Padding(4);
+            this.tbD4.Name = "tbD4";
+            this.tbD4.Size = new System.Drawing.Size(132, 99);
+            this.tbD4.TabIndex = 14;
+            this.tbD4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btLanzarD4
+            // 
+            this.btLanzarD4.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD4.Location = new System.Drawing.Point(575, 37);
+            this.btLanzarD4.Margin = new System.Windows.Forms.Padding(4);
+            this.btLanzarD4.Name = "btLanzarD4";
+            this.btLanzarD4.Size = new System.Drawing.Size(115, 60);
+            this.btLanzarD4.TabIndex = 13;
+            this.btLanzarD4.Text = "LANZAR D4";
+            this.btLanzarD4.UseVisualStyleBackColor = true;
+            this.btLanzarD4.Click += new System.EventHandler(this.btLanzarD4_Click);
+            // 
+            // tbD6
+            // 
+            this.tbD6.BackColor = System.Drawing.Color.White;
+            this.tbD6.Enabled = false;
+            this.tbD6.Font = new System.Drawing.Font("UnZialish", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbD6.Location = new System.Drawing.Point(776, 105);
+            this.tbD6.Margin = new System.Windows.Forms.Padding(4);
+            this.tbD6.Name = "tbD6";
+            this.tbD6.Size = new System.Drawing.Size(132, 99);
+            this.tbD6.TabIndex = 12;
+            this.tbD6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btLanzarD6
+            // 
+            this.btLanzarD6.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD6.Location = new System.Drawing.Point(787, 37);
+            this.btLanzarD6.Margin = new System.Windows.Forms.Padding(4);
+            this.btLanzarD6.Name = "btLanzarD6";
+            this.btLanzarD6.Size = new System.Drawing.Size(115, 60);
+            this.btLanzarD6.TabIndex = 11;
+            this.btLanzarD6.Text = "LANZAR D6";
+            this.btLanzarD6.UseVisualStyleBackColor = true;
+            this.btLanzarD6.Click += new System.EventHandler(this.btLanzarD6_Click);
+            // 
+            // tbD8
+            // 
+            this.tbD8.BackColor = System.Drawing.Color.White;
+            this.tbD8.Enabled = false;
+            this.tbD8.Font = new System.Drawing.Font("UnZialish", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbD8.Location = new System.Drawing.Point(971, 105);
+            this.tbD8.Margin = new System.Windows.Forms.Padding(4);
+            this.tbD8.Name = "tbD8";
+            this.tbD8.Size = new System.Drawing.Size(132, 99);
+            this.tbD8.TabIndex = 10;
+            this.tbD8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btLanzarD8
+            // 
+            this.btLanzarD8.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD8.Location = new System.Drawing.Point(980, 37);
+            this.btLanzarD8.Margin = new System.Windows.Forms.Padding(4);
+            this.btLanzarD8.Name = "btLanzarD8";
+            this.btLanzarD8.Size = new System.Drawing.Size(115, 60);
+            this.btLanzarD8.TabIndex = 9;
+            this.btLanzarD8.Text = "LANZAR D8";
+            this.btLanzarD8.UseVisualStyleBackColor = true;
+            this.btLanzarD8.Click += new System.EventHandler(this.btLanzarD8_Click);
+            // 
+            // tbD10
+            // 
+            this.tbD10.BackColor = System.Drawing.Color.White;
+            this.tbD10.Enabled = false;
+            this.tbD10.Font = new System.Drawing.Font("UnZialish", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbD10.Location = new System.Drawing.Point(565, 297);
+            this.tbD10.Margin = new System.Windows.Forms.Padding(4);
+            this.tbD10.Name = "tbD10";
+            this.tbD10.Size = new System.Drawing.Size(132, 99);
+            this.tbD10.TabIndex = 8;
+            this.tbD10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btLanzarD10
+            // 
+            this.btLanzarD10.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD10.Location = new System.Drawing.Point(575, 229);
+            this.btLanzarD10.Margin = new System.Windows.Forms.Padding(4);
+            this.btLanzarD10.Name = "btLanzarD10";
+            this.btLanzarD10.Size = new System.Drawing.Size(115, 60);
+            this.btLanzarD10.TabIndex = 7;
+            this.btLanzarD10.Text = "LANZAR D10";
+            this.btLanzarD10.UseVisualStyleBackColor = true;
+            this.btLanzarD10.Click += new System.EventHandler(this.btLanzarD10_Click);
+            // 
+            // tbD12
+            // 
+            this.tbD12.BackColor = System.Drawing.Color.White;
+            this.tbD12.Enabled = false;
+            this.tbD12.Font = new System.Drawing.Font("UnZialish", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbD12.Location = new System.Drawing.Point(777, 297);
+            this.tbD12.Margin = new System.Windows.Forms.Padding(4);
+            this.tbD12.Name = "tbD12";
+            this.tbD12.Size = new System.Drawing.Size(132, 99);
+            this.tbD12.TabIndex = 6;
+            this.tbD12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btLanzarD12
+            // 
+            this.btLanzarD12.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD12.Location = new System.Drawing.Point(787, 229);
+            this.btLanzarD12.Margin = new System.Windows.Forms.Padding(4);
+            this.btLanzarD12.Name = "btLanzarD12";
+            this.btLanzarD12.Size = new System.Drawing.Size(115, 60);
+            this.btLanzarD12.TabIndex = 5;
+            this.btLanzarD12.Text = "LANZAR D12";
+            this.btLanzarD12.UseVisualStyleBackColor = true;
+            this.btLanzarD12.Click += new System.EventHandler(this.btLanzarD12_Click);
+            // 
+            // lCriticoPifia
+            // 
+            this.lCriticoPifia.AutoSize = true;
+            this.lCriticoPifia.Font = new System.Drawing.Font("Microsoft Sans Serif", 80F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCriticoPifia.Location = new System.Drawing.Point(516, 396);
+            this.lCriticoPifia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lCriticoPifia.Name = "lCriticoPifia";
+            this.lCriticoPifia.Size = new System.Drawing.Size(0, 153);
+            this.lCriticoPifia.TabIndex = 4;
+            // 
+            // tbResultadoD20
+            // 
+            this.tbResultadoD20.BackColor = System.Drawing.Color.White;
+            this.tbResultadoD20.Enabled = false;
+            this.tbResultadoD20.Font = new System.Drawing.Font("UnZialish", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbResultadoD20.Location = new System.Drawing.Point(971, 297);
+            this.tbResultadoD20.Margin = new System.Windows.Forms.Padding(4);
+            this.tbResultadoD20.Name = "tbResultadoD20";
+            this.tbResultadoD20.Size = new System.Drawing.Size(132, 99);
+            this.tbResultadoD20.TabIndex = 3;
+            this.tbResultadoD20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btLanzarD20
+            // 
+            this.btLanzarD20.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD20.Location = new System.Drawing.Point(980, 229);
+            this.btLanzarD20.Margin = new System.Windows.Forms.Padding(4);
+            this.btLanzarD20.Name = "btLanzarD20";
+            this.btLanzarD20.Size = new System.Drawing.Size(115, 60);
+            this.btLanzarD20.TabIndex = 2;
+            this.btLanzarD20.Text = "LANZAR D20";
+            this.btLanzarD20.UseVisualStyleBackColor = true;
+            this.btLanzarD20.Click += new System.EventHandler(this.btLanzarD20_Click);
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.gbLugares);
+            this.tabPage8.Controls.Add(this.panel44);
+            this.tabPage8.Location = new System.Drawing.Point(4, 27);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(1853, 920);
+            this.tabPage8.TabIndex = 8;
+            this.tabPage8.Text = "Mapa v1.0";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // gbLugares
+            // 
+            this.gbLugares.Controls.Add(this.lPuertaNegra);
+            this.gbLugares.Controls.Add(this.lRobleda);
+            this.gbLugares.Location = new System.Drawing.Point(1530, 23);
+            this.gbLugares.Name = "gbLugares";
+            this.gbLugares.Size = new System.Drawing.Size(303, 870);
+            this.gbLugares.TabIndex = 2;
+            this.gbLugares.TabStop = false;
+            this.gbLugares.Text = "Lugares";
+            // 
+            // lRobleda
+            // 
+            this.lRobleda.AutoSize = true;
+            this.lRobleda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lRobleda.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lRobleda.Location = new System.Drawing.Point(31, 41);
+            this.lRobleda.Name = "lRobleda";
+            this.lRobleda.Size = new System.Drawing.Size(95, 19);
+            this.lRobleda.TabIndex = 1;
+            this.lRobleda.Text = "- Robleda";
+            this.lRobleda.Click += new System.EventHandler(this.lRobleda_Click);
+            this.lRobleda.MouseHover += new System.EventHandler(this.lRobleda_MouseHover);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(513, 594);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(300, 217);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.Location = new System.Drawing.Point(409, 379);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(393, 105);
+            this.panel6.TabIndex = 16;
             // 
             // pbPnj
             // 
@@ -773,16 +1538,6 @@
             this.lNivel.Name = "lNivel";
             this.lNivel.Size = new System.Drawing.Size(0, 36);
             this.lNivel.TabIndex = 31;
-            // 
-            // lNombrePnj
-            // 
-            this.lNombrePnj.AutoSize = true;
-            this.lNombrePnj.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lNombrePnj.Location = new System.Drawing.Point(549, 135);
-            this.lNombrePnj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lNombrePnj.Name = "lNombrePnj";
-            this.lNombrePnj.Size = new System.Drawing.Size(0, 46);
-            this.lNombrePnj.TabIndex = 40;
             // 
             // pConjuros
             // 
@@ -822,7 +1577,7 @@
             this.lSortiPnj.Location = new System.Drawing.Point(27, 262);
             this.lSortiPnj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lSortiPnj.Name = "lSortiPnj";
-            this.lSortiPnj.Size = new System.Drawing.Size(0, 17);
+            this.lSortiPnj.Size = new System.Drawing.Size(0, 19);
             this.lSortiPnj.TabIndex = 34;
             // 
             // lSALiDPnj
@@ -831,7 +1586,7 @@
             this.lSALiDPnj.Location = new System.Drawing.Point(27, 214);
             this.lSALiDPnj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lSALiDPnj.Name = "lSALiDPnj";
-            this.lSALiDPnj.Size = new System.Drawing.Size(0, 17);
+            this.lSALiDPnj.Size = new System.Drawing.Size(0, 19);
             this.lSALiDPnj.TabIndex = 34;
             // 
             // lSPetrfPnj
@@ -840,7 +1595,7 @@
             this.lSPetrfPnj.Location = new System.Drawing.Point(27, 167);
             this.lSPetrfPnj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lSPetrfPnj.Name = "lSPetrfPnj";
-            this.lSPetrfPnj.Size = new System.Drawing.Size(0, 17);
+            this.lSPetrfPnj.Size = new System.Drawing.Size(0, 19);
             this.lSPetrfPnj.TabIndex = 34;
             // 
             // lSVarPnj
@@ -849,7 +1604,7 @@
             this.lSVarPnj.Location = new System.Drawing.Point(27, 119);
             this.lSVarPnj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lSVarPnj.Name = "lSVarPnj";
-            this.lSVarPnj.Size = new System.Drawing.Size(0, 17);
+            this.lSVarPnj.Size = new System.Drawing.Size(0, 19);
             this.lSVarPnj.TabIndex = 1;
             // 
             // lSVenPnj
@@ -858,7 +1613,7 @@
             this.lSVenPnj.Location = new System.Drawing.Point(27, 70);
             this.lSVenPnj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lSVenPnj.Name = "lSVenPnj";
-            this.lSVenPnj.Size = new System.Drawing.Size(0, 17);
+            this.lSVenPnj.Size = new System.Drawing.Size(0, 19);
             this.lSVenPnj.TabIndex = 0;
             // 
             // panel39
@@ -966,19 +1721,6 @@
             this.lVidaPnj.Size = new System.Drawing.Size(0, 36);
             this.lVidaPnj.TabIndex = 30;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Font = new System.Drawing.Font("UnZialish", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(592, 48);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(271, 52);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Nuevo PNJ";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
             // panel4
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
@@ -987,22 +1729,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(392, 105);
             this.panel4.TabIndex = 16;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.pictureBox3);
-            this.tabPage7.Controls.Add(this.label26);
-            this.tabPage7.Controls.Add(this.cbConjuros);
-            this.tabPage7.Controls.Add(this.pictureBox4);
-            this.tabPage7.Controls.Add(this.dgvConjuros);
-            this.tabPage7.Controls.Add(this.panel30);
-            this.tabPage7.Location = new System.Drawing.Point(4, 26);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1487, 921);
-            this.tabPage7.TabIndex = 7;
-            this.tabPage7.Text = "Libro de Conjuros";
-            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -1015,29 +1741,6 @@
             this.pictureBox3.TabIndex = 26;
             this.pictureBox3.TabStop = false;
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(11, 486);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(239, 17);
-            this.label26.TabIndex = 25;
-            this.label26.Text = "Selecciona el Libro de Conjuros";
-            // 
-            // cbConjuros
-            // 
-            this.cbConjuros.FormattingEnabled = true;
-            this.cbConjuros.Items.AddRange(new object[] {
-            "Arcanos",
-            "Divinos"});
-            this.cbConjuros.Location = new System.Drawing.Point(340, 482);
-            this.cbConjuros.Margin = new System.Windows.Forms.Padding(4);
-            this.cbConjuros.Name = "cbConjuros";
-            this.cbConjuros.Size = new System.Drawing.Size(160, 25);
-            this.cbConjuros.TabIndex = 24;
-            this.cbConjuros.SelectedIndexChanged += new System.EventHandler(this.cbConjuros_SelectedIndexChanged);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
@@ -1049,173 +1752,14 @@
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
             // 
-            // dgvConjuros
-            // 
-            this.dgvConjuros.AllowUserToAddRows = false;
-            this.dgvConjuros.AllowUserToDeleteRows = false;
-            this.dgvConjuros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvConjuros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConjuros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nivel,
-            this.Nombre,
-            this.Alcance,
-            this.Duracion,
-            this.Descripcion});
-            this.dgvConjuros.Location = new System.Drawing.Point(11, 535);
-            this.dgvConjuros.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvConjuros.Name = "dgvConjuros";
-            this.dgvConjuros.ReadOnly = true;
-            this.dgvConjuros.Size = new System.Drawing.Size(1463, 263);
-            this.dgvConjuros.TabIndex = 18;
-            // 
-            // Nivel
-            // 
-            this.Nivel.HeaderText = "Nivel";
-            this.Nivel.Name = "Nivel";
-            this.Nivel.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Alcance
-            // 
-            this.Alcance.HeaderText = "Alcance";
-            this.Alcance.Name = "Alcance";
-            this.Alcance.ReadOnly = true;
-            // 
-            // Duracion
-            // 
-            this.Duracion.HeaderText = "Duracion";
-            this.Duracion.Name = "Duracion";
-            this.Duracion.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
             // panel30
             // 
             this.panel30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel30.BackgroundImage")));
             this.panel30.Location = new System.Drawing.Point(4, 4);
             this.panel30.Margin = new System.Windows.Forms.Padding(4);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(521, 129);
+            this.panel30.Size = new System.Drawing.Size(392, 105);
             this.panel30.TabIndex = 17;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.btMenos);
-            this.tabPage3.Controls.Add(this.btMas);
-            this.tabPage3.Controls.Add(this.lHabilidadII);
-            this.tabPage3.Controls.Add(this.lHabilidadI);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.lTesoro);
-            this.tabPage3.Controls.Add(this.lAlineamiento);
-            this.tabPage3.Controls.Add(this.pbCriatura);
-            this.tabPage3.Controls.Add(this.lArmasCombII);
-            this.tabPage3.Controls.Add(this.lArmasCombI);
-            this.tabPage3.Controls.Add(this.cbCriaturas);
-            this.tabPage3.Controls.Add(this.panel18);
-            this.tabPage3.Controls.Add(this.panel17);
-            this.tabPage3.Controls.Add(this.panel16);
-            this.tabPage3.Controls.Add(this.panel15);
-            this.tabPage3.Controls.Add(this.panel14);
-            this.tabPage3.Controls.Add(this.panel13);
-            this.tabPage3.Controls.Add(this.panel12);
-            this.tabPage3.Controls.Add(this.panel11);
-            this.tabPage3.Controls.Add(this.panel10);
-            this.tabPage3.Controls.Add(this.panel9);
-            this.tabPage3.Controls.Add(this.panel8);
-            this.tabPage3.Controls.Add(this.lNombreC);
-            this.tabPage3.Controls.Add(this.panel3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1853, 921);
-            this.tabPage3.TabIndex = 3;
-            this.tabPage3.Text = "Bestiario";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // btMenos
-            // 
-            this.btMenos.Location = new System.Drawing.Point(695, 161);
-            this.btMenos.Margin = new System.Windows.Forms.Padding(4);
-            this.btMenos.Name = "btMenos";
-            this.btMenos.Size = new System.Drawing.Size(28, 28);
-            this.btMenos.TabIndex = 38;
-            this.btMenos.Text = "-";
-            this.btMenos.UseVisualStyleBackColor = true;
-            this.btMenos.Click += new System.EventHandler(this.btMenos_Click);
-            // 
-            // btMas
-            // 
-            this.btMas.Location = new System.Drawing.Point(695, 134);
-            this.btMas.Margin = new System.Windows.Forms.Padding(4);
-            this.btMas.Name = "btMas";
-            this.btMas.Size = new System.Drawing.Size(28, 28);
-            this.btMas.TabIndex = 37;
-            this.btMas.Text = "+";
-            this.btMas.UseVisualStyleBackColor = true;
-            this.btMas.Click += new System.EventHandler(this.btMas_Click);
-            // 
-            // lHabilidadII
-            // 
-            this.lHabilidadII.AutoSize = true;
-            this.lHabilidadII.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lHabilidadII.Location = new System.Drawing.Point(560, 572);
-            this.lHabilidadII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lHabilidadII.Name = "lHabilidadII";
-            this.lHabilidadII.Size = new System.Drawing.Size(93, 28);
-            this.lHabilidadII.TabIndex = 36;
-            this.lHabilidadII.Text = "label11";
-            // 
-            // lHabilidadI
-            // 
-            this.lHabilidadI.AutoSize = true;
-            this.lHabilidadI.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lHabilidadI.Location = new System.Drawing.Point(560, 548);
-            this.lHabilidadI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lHabilidadI.Name = "lHabilidadI";
-            this.lHabilidadI.Size = new System.Drawing.Size(104, 28);
-            this.lHabilidadI.TabIndex = 35;
-            this.lHabilidadI.Text = "label10";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(51, 159);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(187, 17);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "Selecciona una Criatura:";
-            // 
-            // lTesoro
-            // 
-            this.lTesoro.AutoSize = true;
-            this.lTesoro.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lTesoro.Location = new System.Drawing.Point(1152, 346);
-            this.lTesoro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lTesoro.Name = "lTesoro";
-            this.lTesoro.Size = new System.Drawing.Size(50, 28);
-            this.lTesoro.TabIndex = 30;
-            this.lTesoro.Text = "24";
-            // 
-            // lAlineamiento
-            // 
-            this.lAlineamiento.AutoSize = true;
-            this.lAlineamiento.Font = new System.Drawing.Font("UnZialish", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lAlineamiento.Location = new System.Drawing.Point(1261, 54);
-            this.lAlineamiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lAlineamiento.Name = "lAlineamiento";
-            this.lAlineamiento.Size = new System.Drawing.Size(93, 28);
-            this.lAlineamiento.TabIndex = 33;
-            this.lAlineamiento.Text = "label9";
             // 
             // pbCriatura
             // 
@@ -1225,42 +1769,6 @@
             this.pbCriatura.Size = new System.Drawing.Size(451, 535);
             this.pbCriatura.TabIndex = 32;
             this.pbCriatura.TabStop = false;
-            // 
-            // lArmasCombII
-            // 
-            this.lArmasCombII.AutoSize = true;
-            this.lArmasCombII.Font = new System.Drawing.Font("UnZialish", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lArmasCombII.Location = new System.Drawing.Point(816, 426);
-            this.lArmasCombII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lArmasCombII.Name = "lArmasCombII";
-            this.lArmasCombII.Size = new System.Drawing.Size(90, 23);
-            this.lArmasCombII.TabIndex = 31;
-            this.lArmasCombII.Text = "label10";
-            // 
-            // lArmasCombI
-            // 
-            this.lArmasCombI.AutoSize = true;
-            this.lArmasCombI.Font = new System.Drawing.Font("UnZialish", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lArmasCombI.Location = new System.Drawing.Point(816, 400);
-            this.lArmasCombI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lArmasCombI.Name = "lArmasCombI";
-            this.lArmasCombI.Size = new System.Drawing.Size(81, 23);
-            this.lArmasCombI.TabIndex = 30;
-            this.lArmasCombI.Text = "label9";
-            // 
-            // cbCriaturas
-            // 
-            this.cbCriaturas.FormattingEnabled = true;
-            this.cbCriaturas.Items.AddRange(new object[] {
-            "Aboleth",
-            "Ankheg"});
-            this.cbCriaturas.Location = new System.Drawing.Point(316, 153);
-            this.cbCriaturas.Margin = new System.Windows.Forms.Padding(4);
-            this.cbCriaturas.Name = "cbCriaturas";
-            this.cbCriaturas.Size = new System.Drawing.Size(160, 25);
-            this.cbCriaturas.TabIndex = 29;
-            this.cbCriaturas.Text = "Aboleth";
-            this.cbCriaturas.SelectedIndexChanged += new System.EventHandler(this.cbCriaturas_SelectedIndexChanged);
             // 
             // panel18
             // 
@@ -1282,7 +1790,7 @@
             this.lSSort.Location = new System.Drawing.Point(27, 262);
             this.lSSort.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lSSort.Name = "lSSort";
-            this.lSSort.Size = new System.Drawing.Size(26, 17);
+            this.lSSort.Size = new System.Drawing.Size(28, 19);
             this.lSSort.TabIndex = 34;
             this.lSSort.Text = "10";
             // 
@@ -1504,17 +2012,6 @@
             this.panel8.Size = new System.Drawing.Size(152, 60);
             this.panel8.TabIndex = 18;
             // 
-            // lNombreC
-            // 
-            this.lNombreC.AutoSize = true;
-            this.lNombreC.Font = new System.Drawing.Font("UnZialish", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lNombreC.Location = new System.Drawing.Point(629, 44);
-            this.lNombreC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lNombreC.Name = "lNombreC";
-            this.lNombreC.Size = new System.Drawing.Size(333, 52);
-            this.lNombreC.TabIndex = 17;
-            this.lNombreC.Text = "- CRIATURA -";
-            // 
             // panel3
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
@@ -1524,107 +2021,14 @@
             this.panel3.Size = new System.Drawing.Size(394, 104);
             this.panel3.TabIndex = 16;
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.lCriaturaAlineam);
-            this.tabPage4.Controls.Add(this.panel29);
-            this.tabPage4.Controls.Add(this.lNombreCriatura);
-            this.tabPage4.Controls.Add(this.lCriaturaHabilII);
-            this.tabPage4.Controls.Add(this.lCriaturaHabilI);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.lCriaturaTesoro);
-            this.tabPage4.Controls.Add(this.pbImagenCriatura);
-            this.tabPage4.Controls.Add(this.lCriaturaArmasII);
-            this.tabPage4.Controls.Add(this.lCriaturaArmasI);
-            this.tabPage4.Controls.Add(this.cbSelecCriatura);
-            this.tabPage4.Controls.Add(this.panel19);
-            this.tabPage4.Controls.Add(this.panel20);
-            this.tabPage4.Controls.Add(this.panel21);
-            this.tabPage4.Controls.Add(this.panel22);
-            this.tabPage4.Controls.Add(this.panel23);
-            this.tabPage4.Controls.Add(this.panel24);
-            this.tabPage4.Controls.Add(this.panel25);
-            this.tabPage4.Controls.Add(this.panel26);
-            this.tabPage4.Controls.Add(this.panel27);
-            this.tabPage4.Controls.Add(this.panel28);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.panel2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 26);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1853, 921);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Crear Criaturas";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // lCriaturaAlineam
-            // 
-            this.lCriaturaAlineam.AutoSize = true;
-            this.lCriaturaAlineam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCriaturaAlineam.Location = new System.Drawing.Point(1433, 250);
-            this.lCriaturaAlineam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lCriaturaAlineam.Name = "lCriaturaAlineam";
-            this.lCriaturaAlineam.Size = new System.Drawing.Size(0, 24);
-            this.lCriaturaAlineam.TabIndex = 57;
-            // 
             // panel29
             // 
             this.panel29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel29.BackgroundImage")));
             this.panel29.Location = new System.Drawing.Point(1223, 217);
             this.panel29.Margin = new System.Windows.Forms.Padding(4);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(203, 79);
+            this.panel29.Size = new System.Drawing.Size(202, 67);
             this.panel29.TabIndex = 56;
-            // 
-            // lNombreCriatura
-            // 
-            this.lNombreCriatura.AutoSize = true;
-            this.lNombreCriatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lNombreCriatura.Location = new System.Drawing.Point(584, 129);
-            this.lNombreCriatura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lNombreCriatura.Name = "lNombreCriatura";
-            this.lNombreCriatura.Size = new System.Drawing.Size(0, 46);
-            this.lNombreCriatura.TabIndex = 55;
-            // 
-            // lCriaturaHabilII
-            // 
-            this.lCriaturaHabilII.AutoSize = true;
-            this.lCriaturaHabilII.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCriaturaHabilII.Location = new System.Drawing.Point(533, 678);
-            this.lCriaturaHabilII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lCriaturaHabilII.Name = "lCriaturaHabilII";
-            this.lCriaturaHabilII.Size = new System.Drawing.Size(0, 24);
-            this.lCriaturaHabilII.TabIndex = 54;
-            // 
-            // lCriaturaHabilI
-            // 
-            this.lCriaturaHabilI.AutoSize = true;
-            this.lCriaturaHabilI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCriaturaHabilI.Location = new System.Drawing.Point(533, 654);
-            this.lCriaturaHabilI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lCriaturaHabilI.Name = "lCriaturaHabilI";
-            this.lCriaturaHabilI.Size = new System.Drawing.Size(0, 24);
-            this.lCriaturaHabilI.TabIndex = 53;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(36, 151);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(187, 17);
-            this.label13.TabIndex = 52;
-            this.label13.Text = "Selecciona una Criatura:";
-            // 
-            // lCriaturaTesoro
-            // 
-            this.lCriaturaTesoro.AutoSize = true;
-            this.lCriaturaTesoro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCriaturaTesoro.Location = new System.Drawing.Point(1145, 454);
-            this.lCriaturaTesoro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lCriaturaTesoro.Name = "lCriaturaTesoro";
-            this.lCriaturaTesoro.Size = new System.Drawing.Size(0, 36);
-            this.lCriaturaTesoro.TabIndex = 49;
             // 
             // pbImagenCriatura
             // 
@@ -1635,37 +2039,6 @@
             this.pbImagenCriatura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagenCriatura.TabIndex = 51;
             this.pbImagenCriatura.TabStop = false;
-            // 
-            // lCriaturaArmasII
-            // 
-            this.lCriaturaArmasII.AutoSize = true;
-            this.lCriaturaArmasII.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCriaturaArmasII.Location = new System.Drawing.Point(789, 534);
-            this.lCriaturaArmasII.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lCriaturaArmasII.Name = "lCriaturaArmasII";
-            this.lCriaturaArmasII.Size = new System.Drawing.Size(0, 20);
-            this.lCriaturaArmasII.TabIndex = 50;
-            // 
-            // lCriaturaArmasI
-            // 
-            this.lCriaturaArmasI.AutoSize = true;
-            this.lCriaturaArmasI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCriaturaArmasI.Location = new System.Drawing.Point(789, 508);
-            this.lCriaturaArmasI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lCriaturaArmasI.Name = "lCriaturaArmasI";
-            this.lCriaturaArmasI.Size = new System.Drawing.Size(0, 20);
-            this.lCriaturaArmasI.TabIndex = 48;
-            // 
-            // cbSelecCriatura
-            // 
-            this.cbSelecCriatura.FormattingEnabled = true;
-            this.cbSelecCriatura.Location = new System.Drawing.Point(301, 145);
-            this.cbSelecCriatura.Margin = new System.Windows.Forms.Padding(4);
-            this.cbSelecCriatura.Name = "cbSelecCriatura";
-            this.cbSelecCriatura.Size = new System.Drawing.Size(160, 25);
-            this.cbSelecCriatura.TabIndex = 47;
-            this.cbSelecCriatura.SelectedIndexChanged += new System.EventHandler(this.cbSelecCriatura_SelectedIndexChanged);
-            this.cbSelecCriatura.Click += new System.EventHandler(this.cbSelecCriatura_Click);
             // 
             // panel19
             // 
@@ -1678,7 +2051,7 @@
             this.panel19.Location = new System.Drawing.Point(1313, 320);
             this.panel19.Margin = new System.Windows.Forms.Padding(4);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(328, 306);
+            this.panel19.Size = new System.Drawing.Size(248, 242);
             this.panel19.TabIndex = 46;
             // 
             // lCriaturaSorti
@@ -1687,7 +2060,7 @@
             this.lCriaturaSorti.Location = new System.Drawing.Point(27, 262);
             this.lCriaturaSorti.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCriaturaSorti.Name = "lCriaturaSorti";
-            this.lCriaturaSorti.Size = new System.Drawing.Size(0, 17);
+            this.lCriaturaSorti.Size = new System.Drawing.Size(0, 19);
             this.lCriaturaSorti.TabIndex = 34;
             // 
             // lCriaturaAliDrag
@@ -1696,7 +2069,7 @@
             this.lCriaturaAliDrag.Location = new System.Drawing.Point(27, 214);
             this.lCriaturaAliDrag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCriaturaAliDrag.Name = "lCriaturaAliDrag";
-            this.lCriaturaAliDrag.Size = new System.Drawing.Size(0, 17);
+            this.lCriaturaAliDrag.Size = new System.Drawing.Size(0, 19);
             this.lCriaturaAliDrag.TabIndex = 34;
             // 
             // lCriaturasPetrif
@@ -1705,7 +2078,7 @@
             this.lCriaturasPetrif.Location = new System.Drawing.Point(27, 167);
             this.lCriaturasPetrif.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCriaturasPetrif.Name = "lCriaturasPetrif";
-            this.lCriaturasPetrif.Size = new System.Drawing.Size(0, 17);
+            this.lCriaturasPetrif.Size = new System.Drawing.Size(0, 19);
             this.lCriaturasPetrif.TabIndex = 34;
             // 
             // lCriaturaVaritas
@@ -1714,7 +2087,7 @@
             this.lCriaturaVaritas.Location = new System.Drawing.Point(27, 119);
             this.lCriaturaVaritas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCriaturaVaritas.Name = "lCriaturaVaritas";
-            this.lCriaturaVaritas.Size = new System.Drawing.Size(0, 17);
+            this.lCriaturaVaritas.Size = new System.Drawing.Size(0, 19);
             this.lCriaturaVaritas.TabIndex = 1;
             // 
             // lCriaturaVeneno
@@ -1723,7 +2096,7 @@
             this.lCriaturaVeneno.Location = new System.Drawing.Point(27, 70);
             this.lCriaturaVeneno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCriaturaVeneno.Name = "lCriaturaVeneno";
-            this.lCriaturaVeneno.Size = new System.Drawing.Size(0, 17);
+            this.lCriaturaVeneno.Size = new System.Drawing.Size(0, 19);
             this.lCriaturaVeneno.TabIndex = 0;
             // 
             // panel20
@@ -1733,7 +2106,7 @@
             this.panel20.Location = new System.Drawing.Point(1079, 222);
             this.panel20.Margin = new System.Windows.Forms.Padding(4);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(136, 74);
+            this.panel20.Size = new System.Drawing.Size(103, 62);
             this.panel20.TabIndex = 45;
             // 
             // lCriaturaPX
@@ -1752,7 +2125,7 @@
             this.panel21.Location = new System.Drawing.Point(1063, 434);
             this.panel21.Margin = new System.Windows.Forms.Padding(4);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(84, 74);
+            this.panel21.Size = new System.Drawing.Size(84, 56);
             this.panel21.TabIndex = 44;
             // 
             // panel22
@@ -1762,7 +2135,7 @@
             this.panel22.Location = new System.Drawing.Point(544, 207);
             this.panel22.Margin = new System.Windows.Forms.Padding(4);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(159, 143);
+            this.panel22.Size = new System.Drawing.Size(120, 114);
             this.panel22.TabIndex = 43;
             // 
             // lCriaturaVida
@@ -1782,7 +2155,7 @@
             this.panel23.Location = new System.Drawing.Point(779, 320);
             this.panel23.Margin = new System.Windows.Forms.Padding(4);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(224, 86);
+            this.panel23.Size = new System.Drawing.Size(169, 64);
             this.panel23.TabIndex = 42;
             // 
             // lCriaturaMov
@@ -1802,7 +2175,7 @@
             this.panel24.Location = new System.Drawing.Point(1063, 320);
             this.panel24.Margin = new System.Windows.Forms.Padding(4);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(197, 86);
+            this.panel24.Size = new System.Drawing.Size(151, 73);
             this.panel24.TabIndex = 41;
             // 
             // lCriaturaMoral
@@ -1821,7 +2194,7 @@
             this.panel25.Location = new System.Drawing.Point(533, 607);
             this.panel25.Margin = new System.Windows.Forms.Padding(4);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(341, 43);
+            this.panel25.Size = new System.Drawing.Size(256, 43);
             this.panel25.TabIndex = 40;
             // 
             // panel26
@@ -1831,7 +2204,7 @@
             this.panel26.Location = new System.Drawing.Point(539, 373);
             this.panel26.Margin = new System.Windows.Forms.Padding(4);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(172, 160);
+            this.panel26.Size = new System.Drawing.Size(125, 117);
             this.panel26.TabIndex = 39;
             // 
             // lCriaturaCA
@@ -1851,7 +2224,7 @@
             this.panel27.Location = new System.Drawing.Point(760, 434);
             this.panel27.Margin = new System.Windows.Forms.Padding(4);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(281, 80);
+            this.panel27.Size = new System.Drawing.Size(210, 70);
             this.panel27.TabIndex = 38;
             // 
             // lCriaturaAtaque
@@ -1871,7 +2244,7 @@
             this.panel28.Location = new System.Drawing.Point(821, 222);
             this.panel28.Margin = new System.Windows.Forms.Padding(4);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(136, 79);
+            this.panel28.Size = new System.Drawing.Size(99, 62);
             this.panel28.TabIndex = 37;
             // 
             // lCriaturaDG
@@ -1884,188 +2257,14 @@
             this.lCriaturaDG.Size = new System.Drawing.Size(0, 36);
             this.lCriaturaDG.TabIndex = 30;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(707, 59);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(283, 42);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Nueva Criatura";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Location = new System.Drawing.Point(4, 4);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(521, 129);
+            this.panel2.Size = new System.Drawing.Size(396, 106);
             this.panel2.TabIndex = 16;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.cbD20);
-            this.tabPage5.Controls.Add(this.cbD12);
-            this.tabPage5.Controls.Add(this.cbD6);
-            this.tabPage5.Controls.Add(this.cbD8);
-            this.tabPage5.Controls.Add(this.cbD4);
-            this.tabPage5.Controls.Add(this.panel1);
-            this.tabPage5.Controls.Add(this.tbD4);
-            this.tabPage5.Controls.Add(this.btLanzarD4);
-            this.tabPage5.Controls.Add(this.tbD6);
-            this.tabPage5.Controls.Add(this.btLanzarD6);
-            this.tabPage5.Controls.Add(this.tbD8);
-            this.tabPage5.Controls.Add(this.btLanzarD8);
-            this.tabPage5.Controls.Add(this.tbD10);
-            this.tabPage5.Controls.Add(this.btLanzarD10);
-            this.tabPage5.Controls.Add(this.tbD12);
-            this.tabPage5.Controls.Add(this.btLanzarD12);
-            this.tabPage5.Controls.Add(this.lCriticoPifia);
-            this.tabPage5.Controls.Add(this.tbResultadoD20);
-            this.tabPage5.Controls.Add(this.btLanzarD20);
-            this.tabPage5.Controls.Add(this.panel7);
-            this.tabPage5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage5.Location = new System.Drawing.Point(4, 26);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1487, 921);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "Dados";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // cbD20
-            // 
-            this.cbD20.FormattingEnabled = true;
-            this.cbD20.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"});
-            this.cbD20.Location = new System.Drawing.Point(1103, 247);
-            this.cbD20.Margin = new System.Windows.Forms.Padding(4);
-            this.cbD20.Name = "cbD20";
-            this.cbD20.Size = new System.Drawing.Size(45, 25);
-            this.cbD20.TabIndex = 22;
-            this.cbD20.Text = "1";
-            // 
-            // cbD12
-            // 
-            this.cbD12.FormattingEnabled = true;
-            this.cbD12.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"});
-            this.cbD12.Location = new System.Drawing.Point(909, 247);
-            this.cbD12.Margin = new System.Windows.Forms.Padding(4);
-            this.cbD12.Name = "cbD12";
-            this.cbD12.Size = new System.Drawing.Size(45, 25);
-            this.cbD12.TabIndex = 21;
-            this.cbD12.Text = "1";
-            // 
-            // cbD6
-            // 
-            this.cbD6.FormattingEnabled = true;
-            this.cbD6.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"});
-            this.cbD6.Location = new System.Drawing.Point(909, 55);
-            this.cbD6.Margin = new System.Windows.Forms.Padding(4);
-            this.cbD6.Name = "cbD6";
-            this.cbD6.Size = new System.Drawing.Size(45, 25);
-            this.cbD6.TabIndex = 19;
-            this.cbD6.Text = "1";
-            // 
-            // cbD8
-            // 
-            this.cbD8.FormattingEnabled = true;
-            this.cbD8.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"});
-            this.cbD8.Location = new System.Drawing.Point(1103, 55);
-            this.cbD8.Margin = new System.Windows.Forms.Padding(4);
-            this.cbD8.Name = "cbD8";
-            this.cbD8.Size = new System.Drawing.Size(45, 25);
-            this.cbD8.TabIndex = 18;
-            this.cbD8.Text = "1";
-            // 
-            // cbD4
-            // 
-            this.cbD4.FormattingEnabled = true;
-            this.cbD4.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15"});
-            this.cbD4.Location = new System.Drawing.Point(697, 55);
-            this.cbD4.Margin = new System.Windows.Forms.Padding(4);
-            this.cbD4.Name = "cbD4";
-            this.cbD4.Size = new System.Drawing.Size(45, 25);
-            this.cbD4.TabIndex = 17;
-            this.cbD4.Text = "1";
             // 
             // panel1
             // 
@@ -2073,162 +2272,8 @@
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(521, 129);
+            this.panel1.Size = new System.Drawing.Size(392, 105);
             this.panel1.TabIndex = 15;
-            // 
-            // tbD4
-            // 
-            this.tbD4.BackColor = System.Drawing.Color.White;
-            this.tbD4.Enabled = false;
-            this.tbD4.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbD4.Location = new System.Drawing.Point(565, 105);
-            this.tbD4.Margin = new System.Windows.Forms.Padding(4);
-            this.tbD4.Name = "tbD4";
-            this.tbD4.Size = new System.Drawing.Size(132, 82);
-            this.tbD4.TabIndex = 14;
-            this.tbD4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btLanzarD4
-            // 
-            this.btLanzarD4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLanzarD4.Location = new System.Drawing.Point(575, 37);
-            this.btLanzarD4.Margin = new System.Windows.Forms.Padding(4);
-            this.btLanzarD4.Name = "btLanzarD4";
-            this.btLanzarD4.Size = new System.Drawing.Size(115, 60);
-            this.btLanzarD4.TabIndex = 13;
-            this.btLanzarD4.Text = "LANZAR D4";
-            this.btLanzarD4.UseVisualStyleBackColor = true;
-            this.btLanzarD4.Click += new System.EventHandler(this.btLanzarD4_Click);
-            // 
-            // tbD6
-            // 
-            this.tbD6.BackColor = System.Drawing.Color.White;
-            this.tbD6.Enabled = false;
-            this.tbD6.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbD6.Location = new System.Drawing.Point(776, 105);
-            this.tbD6.Margin = new System.Windows.Forms.Padding(4);
-            this.tbD6.Name = "tbD6";
-            this.tbD6.Size = new System.Drawing.Size(132, 82);
-            this.tbD6.TabIndex = 12;
-            this.tbD6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btLanzarD6
-            // 
-            this.btLanzarD6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLanzarD6.Location = new System.Drawing.Point(787, 37);
-            this.btLanzarD6.Margin = new System.Windows.Forms.Padding(4);
-            this.btLanzarD6.Name = "btLanzarD6";
-            this.btLanzarD6.Size = new System.Drawing.Size(115, 60);
-            this.btLanzarD6.TabIndex = 11;
-            this.btLanzarD6.Text = "LANZAR D6";
-            this.btLanzarD6.UseVisualStyleBackColor = true;
-            this.btLanzarD6.Click += new System.EventHandler(this.btLanzarD6_Click);
-            // 
-            // tbD8
-            // 
-            this.tbD8.BackColor = System.Drawing.Color.White;
-            this.tbD8.Enabled = false;
-            this.tbD8.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbD8.Location = new System.Drawing.Point(971, 105);
-            this.tbD8.Margin = new System.Windows.Forms.Padding(4);
-            this.tbD8.Name = "tbD8";
-            this.tbD8.Size = new System.Drawing.Size(132, 82);
-            this.tbD8.TabIndex = 10;
-            this.tbD8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btLanzarD8
-            // 
-            this.btLanzarD8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLanzarD8.Location = new System.Drawing.Point(980, 37);
-            this.btLanzarD8.Margin = new System.Windows.Forms.Padding(4);
-            this.btLanzarD8.Name = "btLanzarD8";
-            this.btLanzarD8.Size = new System.Drawing.Size(115, 60);
-            this.btLanzarD8.TabIndex = 9;
-            this.btLanzarD8.Text = "LANZAR D8";
-            this.btLanzarD8.UseVisualStyleBackColor = true;
-            this.btLanzarD8.Click += new System.EventHandler(this.btLanzarD8_Click);
-            // 
-            // tbD10
-            // 
-            this.tbD10.BackColor = System.Drawing.Color.White;
-            this.tbD10.Enabled = false;
-            this.tbD10.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbD10.Location = new System.Drawing.Point(565, 297);
-            this.tbD10.Margin = new System.Windows.Forms.Padding(4);
-            this.tbD10.Name = "tbD10";
-            this.tbD10.Size = new System.Drawing.Size(132, 82);
-            this.tbD10.TabIndex = 8;
-            this.tbD10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btLanzarD10
-            // 
-            this.btLanzarD10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLanzarD10.Location = new System.Drawing.Point(575, 229);
-            this.btLanzarD10.Margin = new System.Windows.Forms.Padding(4);
-            this.btLanzarD10.Name = "btLanzarD10";
-            this.btLanzarD10.Size = new System.Drawing.Size(115, 60);
-            this.btLanzarD10.TabIndex = 7;
-            this.btLanzarD10.Text = "LANZAR D10";
-            this.btLanzarD10.UseVisualStyleBackColor = true;
-            this.btLanzarD10.Click += new System.EventHandler(this.btLanzarD10_Click);
-            // 
-            // tbD12
-            // 
-            this.tbD12.BackColor = System.Drawing.Color.White;
-            this.tbD12.Enabled = false;
-            this.tbD12.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbD12.Location = new System.Drawing.Point(777, 297);
-            this.tbD12.Margin = new System.Windows.Forms.Padding(4);
-            this.tbD12.Name = "tbD12";
-            this.tbD12.Size = new System.Drawing.Size(132, 82);
-            this.tbD12.TabIndex = 6;
-            this.tbD12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btLanzarD12
-            // 
-            this.btLanzarD12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLanzarD12.Location = new System.Drawing.Point(787, 229);
-            this.btLanzarD12.Margin = new System.Windows.Forms.Padding(4);
-            this.btLanzarD12.Name = "btLanzarD12";
-            this.btLanzarD12.Size = new System.Drawing.Size(115, 60);
-            this.btLanzarD12.TabIndex = 5;
-            this.btLanzarD12.Text = "LANZAR D12";
-            this.btLanzarD12.UseVisualStyleBackColor = true;
-            this.btLanzarD12.Click += new System.EventHandler(this.btLanzarD12_Click);
-            // 
-            // lCriticoPifia
-            // 
-            this.lCriticoPifia.AutoSize = true;
-            this.lCriticoPifia.Font = new System.Drawing.Font("Microsoft Sans Serif", 80F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lCriticoPifia.Location = new System.Drawing.Point(516, 396);
-            this.lCriticoPifia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lCriticoPifia.Name = "lCriticoPifia";
-            this.lCriticoPifia.Size = new System.Drawing.Size(0, 153);
-            this.lCriticoPifia.TabIndex = 4;
-            // 
-            // tbResultadoD20
-            // 
-            this.tbResultadoD20.BackColor = System.Drawing.Color.White;
-            this.tbResultadoD20.Enabled = false;
-            this.tbResultadoD20.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbResultadoD20.Location = new System.Drawing.Point(971, 297);
-            this.tbResultadoD20.Margin = new System.Windows.Forms.Padding(4);
-            this.tbResultadoD20.Name = "tbResultadoD20";
-            this.tbResultadoD20.Size = new System.Drawing.Size(132, 82);
-            this.tbResultadoD20.TabIndex = 3;
-            this.tbResultadoD20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btLanzarD20
-            // 
-            this.btLanzarD20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLanzarD20.Location = new System.Drawing.Point(980, 229);
-            this.btLanzarD20.Margin = new System.Windows.Forms.Padding(4);
-            this.btLanzarD20.Name = "btLanzarD20";
-            this.btLanzarD20.Size = new System.Drawing.Size(115, 60);
-            this.btLanzarD20.TabIndex = 2;
-            this.btLanzarD20.Text = "LANZAR D20";
-            this.btLanzarD20.UseVisualStyleBackColor = true;
-            this.btLanzarD20.Click += new System.EventHandler(this.btLanzarD20_Click);
             // 
             // panel7
             // 
@@ -2237,7 +2282,7 @@
             this.panel7.Location = new System.Drawing.Point(4, 140);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(785, 687);
+            this.panel7.Size = new System.Drawing.Size(542, 687);
             this.panel7.TabIndex = 16;
             // 
             // cbD10
@@ -2266,17 +2311,6 @@
             this.cbD10.TabIndex = 20;
             this.cbD10.Text = "1";
             // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.panel44);
-            this.tabPage8.Location = new System.Drawing.Point(4, 26);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1487, 921);
-            this.tabPage8.TabIndex = 8;
-            this.tabPage8.Text = "Mapa v1.0";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
             // panel44
             // 
             this.panel44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel44.BackgroundImage")));
@@ -2304,12 +2338,25 @@
             // 
             this.pRobleda.BackColor = System.Drawing.Color.Transparent;
             this.pRobleda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pRobleda.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pRobleda.Location = new System.Drawing.Point(807, 416);
             this.pRobleda.Margin = new System.Windows.Forms.Padding(4);
             this.pRobleda.Name = "pRobleda";
             this.pRobleda.Size = new System.Drawing.Size(59, 42);
             this.pRobleda.TabIndex = 2;
             this.pRobleda.Click += new System.EventHandler(this.pRobleda_Click);
+            // 
+            // lPuertaNegra
+            // 
+            this.lPuertaNegra.AutoSize = true;
+            this.lPuertaNegra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lPuertaNegra.Font = new System.Drawing.Font("UnZialish", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lPuertaNegra.Location = new System.Drawing.Point(31, 60);
+            this.lPuertaNegra.Name = "lPuertaNegra";
+            this.lPuertaNegra.Size = new System.Drawing.Size(176, 19);
+            this.lPuertaNegra.TabIndex = 2;
+            this.lPuertaNegra.Text = "- La Puerta Negra";
+            this.lPuertaNegra.Click += new System.EventHandler(this.lPuertaNegra_Click);
             // 
             // PantallaDM
             // 
@@ -2326,13 +2373,25 @@
             this.tabControl1.ResumeLayout(false);
             this.tabTienda.ResumeLayout(false);
             this.tabTienda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArmaduras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArmas)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConjuros)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.gbLugares.ResumeLayout(false);
+            this.gbLugares.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPnj)).EndInit();
             this.panel43.ResumeLayout(false);
             this.panel43.PerformLayout();
@@ -2344,13 +2403,8 @@
             this.panel34.PerformLayout();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConjuros)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCriatura)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
@@ -2368,8 +2422,6 @@
             this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenCriatura)).EndInit();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
@@ -2387,10 +2439,7 @@
             this.panel27.PerformLayout();
             this.panel28.ResumeLayout(false);
             this.panel28.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
             this.panel7.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
             this.panel44.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -2576,5 +2625,8 @@
         private System.Windows.Forms.Panel pPuertaNegra;
         private System.Windows.Forms.Button btMenos;
         private System.Windows.Forms.Button btMas;
+        private System.Windows.Forms.Label lRobleda;
+        private System.Windows.Forms.GroupBox gbLugares;
+        private System.Windows.Forms.Label lPuertaNegra;
     }
 }
