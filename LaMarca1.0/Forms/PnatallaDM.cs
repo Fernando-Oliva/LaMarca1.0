@@ -235,8 +235,24 @@ namespace LaMarva1._0
             }
         }
 
-        
-
-
+        private void lRobleda_MouseHover(object sender, EventArgs e)
+        {
+            pRobleda.BorderStyle = BorderStyle.FixedSingle;    
         }
+
+        private void lRobleda_Click(object sender, EventArgs e)
+        {
+            Localizacion lugar = new Localizacion(pRobleda.Name.ToString());
+
+            lugar.Show();
+        }
+
+        private void lPuertaNegra_Click(object sender, EventArgs e)
+        {
+            Localizacion lugar = new Localizacion(pPuertaNegra.Name.ToString());
+
+            lugar.Show();
+        }
+
+    }
 }

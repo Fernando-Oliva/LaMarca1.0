@@ -22,7 +22,7 @@ namespace LaMarva1._0.Clases
             else if (_lugar == "La Puerta Negra")
             {
                 _nombre.Text = "- " + _lugar + " -";
-                // TODO -> _imagen.ImageLocation = @"C:\Users\Fernando\Documents\Visual Studio 2010\CSharpProjects\LaMarca1.0\LaMarca1.0\Imagenes API\RobledaMap.jpg";
+                _imagen.Image = LaMarva1._0.Properties.Resources.La_Puerta_Negra;
                 _descripcion.Text = descripcionLugar.descripcionPuertaNegra();
                 
             }
