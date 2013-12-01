@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlServerCe;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace LaMarva1._0.Clases
 {
@@ -21,7 +22,7 @@ namespace LaMarva1._0.Clases
             int k;
             int n;
             int t;
-            SqlCeConnection conexion = new SqlCeConnection(DBConnectionConfig.dbConnection);
+            SqlCeConnection conexion = new SqlCeConnection(ConfigurationManager.ConnectionStrings["LaMarva1._0.Properties.Settings.MordorConnectionString"].ToString());
         #endregion
 
         public void llenarGridArmas(DataGridView dgvArmasReceived)

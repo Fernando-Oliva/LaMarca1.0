@@ -71,6 +71,7 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Transactions" />
@@ -84,7 +85,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\DBConnectionConfig.cs" />
     <Compile Include="Clases\DBConnectionConjuros.cs" />
     <Compile Include="Clases\DBConnectionCriaturas.cs" />
     <Compile Include="Clases\DBConnectionCriaturasPersonalizadas.cs" />
@@ -175,7 +175,6 @@
     </None>
     <None Include="Fuentes\lazymonkdemo.ttf" />
     <None Include="Fuentes\UnZialish.ttf" />
-    <None Include="LaMarca1.0_TemporaryKey.pfx" />
     <None Include="MordorDataSet.xsc">
       <DependentUpon>MordorDataSet.xsd</DependentUpon>
     </None>

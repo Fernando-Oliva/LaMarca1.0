@@ -297,7 +297,7 @@
             this.tabTienda.Controls.Add(this.dgvArmas);
             this.tabTienda.Location = new System.Drawing.Point(4, 22);
             this.tabTienda.Name = "tabTienda";
-            this.tabTienda.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabTienda.Padding = new System.Windows.Forms.Padding(3);
             this.tabTienda.Size = new System.Drawing.Size(1243, 747);
             this.tabTienda.TabIndex = 0;
             this.tabTienda.Text = "Tienda";
@@ -396,10 +396,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(628, 462);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 15);
+            this.label4.Size = new System.Drawing.Size(122, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "TRANSPORTE";
             // 
@@ -407,10 +407,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(9, 462);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 15);
+            this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "EQUIPO";
             // 
@@ -494,10 +494,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(631, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 15);
+            this.label2.Size = new System.Drawing.Size(110, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "ARMADURAS";
             // 
@@ -505,10 +505,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(8, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 15);
+            this.label1.Size = new System.Drawing.Size(65, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "ARMAS";
             // 
@@ -2135,9 +2135,9 @@
             this.gbLugares.Controls.Add(this.lPuertaNegra);
             this.gbLugares.Controls.Add(this.lRobleda);
             this.gbLugares.Location = new System.Drawing.Point(1148, 19);
-            this.gbLugares.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLugares.Margin = new System.Windows.Forms.Padding(2);
             this.gbLugares.Name = "gbLugares";
-            this.gbLugares.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbLugares.Padding = new System.Windows.Forms.Padding(2);
             this.gbLugares.Size = new System.Drawing.Size(227, 707);
             this.gbLugares.TabIndex = 2;
             this.gbLugares.TabStop = false;

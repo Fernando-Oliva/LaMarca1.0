@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlServerCe;
+using System.Configuration;
 
 namespace LaMarva1._0.Clases
 {
@@ -14,7 +15,9 @@ namespace LaMarva1._0.Clases
         SqlCeDataReader valores;
         string _consulta;
         int f;
-        SqlCeConnection conexion = new SqlCeConnection(DBConnectionConfig.dbConnection);
+        //SqlCeConnection conexion = new SqlCeConnection(DBConnectionConfig.dbConnection);
+
+        SqlCeConnection conexion = new SqlCeConnection(ConfigurationManager.ConnectionStrings["LaMarva1._0.Properties.Settings.MordorConnectionString"].ToString());
 
         #endregion
 
