@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaDM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTienda = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -45,24 +45,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvTransporte = new System.Windows.Forms.DataGridView();
-            this.NombreTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CosteTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvEquipo = new System.Windows.Forms.DataGridView();
-            this.NombreEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EquipoCoste = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EquipoPeso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvArmaduras = new System.Windows.Forms.DataGridView();
-            this.NombreArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CosteArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CAArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PesoArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvArmas = new System.Windows.Forms.DataGridView();
-            this.NombreArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CosteArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DanioArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PesoArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lPXPnj = new System.Windows.Forms.Label();
             this.lTexto = new System.Windows.Forms.Label();
@@ -211,6 +198,23 @@
             this.panel44 = new System.Windows.Forms.Panel();
             this.pPuertaNegra = new System.Windows.Forms.Panel();
             this.pRobleda = new System.Windows.Forms.Panel();
+            this.ArmaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CosteArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DanioArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PesoArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ArmaduraId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CosteArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CAArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PesoArmadura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EquipoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreEquipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EquipoCoste = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EquipoPeso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransporteId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CosteTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabTienda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -425,6 +429,7 @@
             this.dgvTransporte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTransporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTransporte.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TransporteId,
             this.NombreTransporte,
             this.CosteTransporte});
             this.dgvTransporte.Location = new System.Drawing.Point(631, 483);
@@ -436,18 +441,6 @@
             this.dgvTransporte.Size = new System.Drawing.Size(240, 244);
             this.dgvTransporte.TabIndex = 5;
             // 
-            // NombreTransporte
-            // 
-            this.NombreTransporte.HeaderText = "Nombre";
-            this.NombreTransporte.Name = "NombreTransporte";
-            this.NombreTransporte.ReadOnly = true;
-            // 
-            // CosteTransporte
-            // 
-            this.CosteTransporte.HeaderText = "Coste";
-            this.CosteTransporte.Name = "CosteTransporte";
-            this.CosteTransporte.ReadOnly = true;
-            // 
             // dgvEquipo
             // 
             this.dgvEquipo.AllowUserToAddRows = false;
@@ -458,6 +451,7 @@
             this.dgvEquipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEquipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEquipo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.EquipoId,
             this.NombreEquipo,
             this.EquipoCoste,
             this.EquipoPeso});
@@ -470,25 +464,6 @@
             this.dgvEquipo.Size = new System.Drawing.Size(344, 244);
             this.dgvEquipo.TabIndex = 4;
             this.dgvEquipo.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvEquipo_RowHeaderMouseClick);
-            // 
-            // NombreEquipo
-            // 
-            this.NombreEquipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NombreEquipo.HeaderText = "Nombre";
-            this.NombreEquipo.Name = "NombreEquipo";
-            this.NombreEquipo.ReadOnly = true;
-            // 
-            // EquipoCoste
-            // 
-            this.EquipoCoste.HeaderText = "Coste";
-            this.EquipoCoste.Name = "EquipoCoste";
-            this.EquipoCoste.ReadOnly = true;
-            // 
-            // EquipoPeso
-            // 
-            this.EquipoPeso.HeaderText = "Peso";
-            this.EquipoPeso.Name = "EquipoPeso";
-            this.EquipoPeso.ReadOnly = true;
             // 
             // label2
             // 
@@ -523,6 +498,7 @@
             this.dgvArmaduras.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvArmaduras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArmaduras.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ArmaduraId,
             this.NombreArmadura,
             this.CosteArmadura,
             this.CAArmadura,
@@ -536,30 +512,6 @@
             this.dgvArmaduras.Size = new System.Drawing.Size(459, 244);
             this.dgvArmaduras.TabIndex = 1;
             // 
-            // NombreArmadura
-            // 
-            this.NombreArmadura.HeaderText = "Nombre";
-            this.NombreArmadura.Name = "NombreArmadura";
-            this.NombreArmadura.ReadOnly = true;
-            // 
-            // CosteArmadura
-            // 
-            this.CosteArmadura.HeaderText = "Coste";
-            this.CosteArmadura.Name = "CosteArmadura";
-            this.CosteArmadura.ReadOnly = true;
-            // 
-            // CAArmadura
-            // 
-            this.CAArmadura.HeaderText = "CA";
-            this.CAArmadura.Name = "CAArmadura";
-            this.CAArmadura.ReadOnly = true;
-            // 
-            // PesoArmadura
-            // 
-            this.PesoArmadura.HeaderText = "Peso";
-            this.PesoArmadura.Name = "PesoArmadura";
-            this.PesoArmadura.ReadOnly = true;
-            // 
             // dgvArmas
             // 
             this.dgvArmas.AllowUserToAddRows = false;
@@ -569,16 +521,17 @@
             this.dgvArmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArmas.BackgroundColor = System.Drawing.Color.White;
             this.dgvArmas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvArmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArmas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ArmaId,
             this.NombreArma,
             this.CosteArma,
             this.DanioArma,
@@ -591,30 +544,6 @@
             this.dgvArmas.RowTemplate.Height = 24;
             this.dgvArmas.Size = new System.Drawing.Size(444, 244);
             this.dgvArmas.TabIndex = 0;
-            // 
-            // NombreArma
-            // 
-            this.NombreArma.HeaderText = "Nombre";
-            this.NombreArma.Name = "NombreArma";
-            this.NombreArma.ReadOnly = true;
-            // 
-            // CosteArma
-            // 
-            this.CosteArma.HeaderText = "Coste";
-            this.CosteArma.Name = "CosteArma";
-            this.CosteArma.ReadOnly = true;
-            // 
-            // DanioArma
-            // 
-            this.DanioArma.HeaderText = "Daño";
-            this.DanioArma.Name = "DanioArma";
-            this.DanioArma.ReadOnly = true;
-            // 
-            // PesoArma
-            // 
-            this.PesoArma.HeaderText = "Peso";
-            this.PesoArma.Name = "PesoArma";
-            this.PesoArma.ReadOnly = true;
             // 
             // tabPage1
             // 
@@ -2202,6 +2131,130 @@
             this.pRobleda.TabIndex = 2;
             this.pRobleda.Click += new System.EventHandler(this.pRobleda_Click);
             // 
+            // ArmaId
+            // 
+            this.ArmaId.DataPropertyName = "Arma_Id";
+            this.ArmaId.HeaderText = "ArmaId";
+            this.ArmaId.Name = "ArmaId";
+            this.ArmaId.ReadOnly = true;
+            this.ArmaId.Visible = false;
+            // 
+            // NombreArma
+            // 
+            this.NombreArma.DataPropertyName = "Arma_Nombre";
+            this.NombreArma.HeaderText = "Nombre";
+            this.NombreArma.Name = "NombreArma";
+            this.NombreArma.ReadOnly = true;
+            // 
+            // CosteArma
+            // 
+            this.CosteArma.DataPropertyName = "Arma_Coste";
+            this.CosteArma.HeaderText = "Coste";
+            this.CosteArma.Name = "CosteArma";
+            this.CosteArma.ReadOnly = true;
+            // 
+            // DanioArma
+            // 
+            this.DanioArma.DataPropertyName = "Arma_Danio";
+            this.DanioArma.HeaderText = "Daño";
+            this.DanioArma.Name = "DanioArma";
+            this.DanioArma.ReadOnly = true;
+            // 
+            // PesoArma
+            // 
+            this.PesoArma.DataPropertyName = "Arma_Peso";
+            this.PesoArma.HeaderText = "Peso";
+            this.PesoArma.Name = "PesoArma";
+            this.PesoArma.ReadOnly = true;
+            // 
+            // ArmaduraId
+            // 
+            this.ArmaduraId.DataPropertyName = "Armadura_Id";
+            this.ArmaduraId.HeaderText = "ArmaduraId";
+            this.ArmaduraId.Name = "ArmaduraId";
+            this.ArmaduraId.ReadOnly = true;
+            this.ArmaduraId.Visible = false;
+            // 
+            // NombreArmadura
+            // 
+            this.NombreArmadura.DataPropertyName = "Armadura_Nombre";
+            this.NombreArmadura.HeaderText = "Nombre";
+            this.NombreArmadura.Name = "NombreArmadura";
+            this.NombreArmadura.ReadOnly = true;
+            // 
+            // CosteArmadura
+            // 
+            this.CosteArmadura.DataPropertyName = "Armadura_Coste";
+            this.CosteArmadura.HeaderText = "Coste";
+            this.CosteArmadura.Name = "CosteArmadura";
+            this.CosteArmadura.ReadOnly = true;
+            // 
+            // CAArmadura
+            // 
+            this.CAArmadura.DataPropertyName = "Armadura_CA";
+            this.CAArmadura.HeaderText = "CA";
+            this.CAArmadura.Name = "CAArmadura";
+            this.CAArmadura.ReadOnly = true;
+            // 
+            // PesoArmadura
+            // 
+            this.PesoArmadura.DataPropertyName = "Armadura_Peso";
+            this.PesoArmadura.HeaderText = "Peso";
+            this.PesoArmadura.Name = "PesoArmadura";
+            this.PesoArmadura.ReadOnly = true;
+            // 
+            // EquipoId
+            // 
+            this.EquipoId.DataPropertyName = "Equipo_Id";
+            this.EquipoId.HeaderText = "EquipoId";
+            this.EquipoId.Name = "EquipoId";
+            this.EquipoId.ReadOnly = true;
+            this.EquipoId.Visible = false;
+            // 
+            // NombreEquipo
+            // 
+            this.NombreEquipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NombreEquipo.DataPropertyName = "Equipo_Nombre";
+            this.NombreEquipo.HeaderText = "Nombre";
+            this.NombreEquipo.Name = "NombreEquipo";
+            this.NombreEquipo.ReadOnly = true;
+            // 
+            // EquipoCoste
+            // 
+            this.EquipoCoste.DataPropertyName = "Equipo_Coste";
+            this.EquipoCoste.HeaderText = "Coste";
+            this.EquipoCoste.Name = "EquipoCoste";
+            this.EquipoCoste.ReadOnly = true;
+            // 
+            // EquipoPeso
+            // 
+            this.EquipoPeso.DataPropertyName = "Equipo_Peso";
+            this.EquipoPeso.HeaderText = "Peso";
+            this.EquipoPeso.Name = "EquipoPeso";
+            this.EquipoPeso.ReadOnly = true;
+            // 
+            // TransporteId
+            // 
+            this.TransporteId.DataPropertyName = "Transporte_Id";
+            this.TransporteId.HeaderText = "TransporteId";
+            this.TransporteId.Name = "TransporteId";
+            this.TransporteId.ReadOnly = true;
+            this.TransporteId.Visible = false;
+            // 
+            // NombreTransporte
+            // 
+            this.NombreTransporte.DataPropertyName = "Transporte_Nombre";
+            this.NombreTransporte.HeaderText = "Nombre";
+            this.NombreTransporte.Name = "NombreTransporte";
+            this.NombreTransporte.ReadOnly = true;
+            // 
+            // CosteTransporte
+            // 
+            this.CosteTransporte.DataPropertyName = "Transporte_Coste";
+            this.CosteTransporte.HeaderText = "Coste";
+            this.CosteTransporte.Name = "CosteTransporte";
+            this.CosteTransporte.ReadOnly = true;
+            // 
             // PantallaDM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2294,23 +2347,10 @@
         private System.Windows.Forms.TabPage tabTienda;
         private System.Windows.Forms.DataGridView dgvArmas;
         private System.Windows.Forms.DataGridView dgvArmaduras;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArmadura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArmadura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CAArmadura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArmadura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DanioArma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArma;
         private System.Windows.Forms.DataGridView dgvEquipo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvTransporte;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreTransporte;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CosteTransporte;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreEquipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EquipoCoste;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EquipoPeso;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage1;
@@ -2471,5 +2511,22 @@
         private System.Windows.Forms.Label lRobleda;
         private System.Windows.Forms.GroupBox gbLugares;
         private System.Windows.Forms.Label lPuertaNegra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ArmaId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DanioArma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ArmaduraId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CAArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransporteId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreTransporte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CosteTransporte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EquipoId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreEquipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EquipoCoste;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EquipoPeso;
     }
 }

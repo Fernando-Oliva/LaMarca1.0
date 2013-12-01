@@ -1,6 +1,6 @@
 ﻿namespace LaMarva1._0
 {
-    partial class CriaturasPersonalizadas
+    partial class formCriaturasPersonalizadas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriaturasPersonalizadas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCriaturasPersonalizadas));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,7 +46,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.cbAlineamiento = new System.Windows.Forms.ComboBox();
             this.tbTesoro = new System.Windows.Forms.TextBox();
@@ -247,14 +246,6 @@
             this.label19.Size = new System.Drawing.Size(62, 15);
             this.label19.TabIndex = 18;
             this.label19.Text = "Imagen:";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(391, 105);
-            this.panel2.TabIndex = 19;
             // 
             // tbNombre
             // 
@@ -483,7 +474,7 @@
             this.tbAtaque.Size = new System.Drawing.Size(100, 23);
             this.tbAtaque.TabIndex = 61;
             // 
-            // CriaturasPersonalizadas
+            // formCriaturasPersonalizadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -511,7 +502,6 @@
             this.Controls.Add(this.tbTesoro);
             this.Controls.Add(this.cbAlineamiento);
             this.Controls.Add(this.tbNombre);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -527,7 +517,7 @@
             this.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Name = "CriaturasPersonalizadas";
+            this.Name = "formCriaturasPersonalizadas";
             this.Text = "Criaturas Personalizadas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
@@ -557,7 +547,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.ComboBox cbAlineamiento;
         private System.Windows.Forms.TextBox tbTesoro;

@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace LaMarva1._0
 {
-    public partial class Pnj : Form
+    public partial class formPnj : Form
     {
         Clases.DBConnectionPnj pnjs = new Clases.DBConnectionPnj();
         Clases.DBConnectionConjuros conjurosSeleccionados = new Clases.DBConnectionConjuros();
-        public Pnj()
+        public formPnj()
         {
             InitializeComponent();
         }

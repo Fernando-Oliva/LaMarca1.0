@@ -20,7 +20,7 @@ namespace LaMarva1._0
         Clases.DBConnectionCriaturasPersonalizadas criaturaPersonalizada = new Clases.DBConnectionCriaturasPersonalizadas();
         Clases.DBConnectionConjuros conjuros = new Clases.DBConnectionConjuros();
         Clases.DBConnectionPnj pnjs = new Clases.DBConnectionPnj();
-        CriaturasPersonalizadas criaturaPropia = new CriaturasPersonalizadas();
+        formCriaturasPersonalizadas criaturaPropia = new formCriaturasPersonalizadas();
         #endregion
 
         #region Declaraciones
@@ -169,7 +169,7 @@ namespace LaMarva1._0
 
         private void label11_Click(object sender, EventArgs e)
         {
-            Pnj nuevoPnj = new Pnj();
+            formPnj nuevoPnj = new formPnj();
             nuevoPnj.Show();
         }
 

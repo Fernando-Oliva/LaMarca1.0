@@ -46,6 +46,12 @@ namespace LaMarva1._0.Clases
             int sorti = Convert.ToInt32(_sorti);
             #endregion
 
+            MordorContext mordorCtxt = new MordorContext(conexion);
+
+
+
+
+
             _consulta = "insert into CriaturasPersonalizadas values ('" + _nombre + "'," + ca + "," + caPos +
                         "," + vida + "," + vidaMax + "," + ataque + ",'" + _armasI + "','" + _armasII + "'," + sVeneno +
                         "," + sVaritas + "," + sPetrif + "," + aliDrag + "," + sorti + "," + mov + "," + moral +

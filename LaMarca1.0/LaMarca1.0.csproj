@@ -69,10 +69,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
@@ -95,11 +95,11 @@
     <Compile Include="Clases\EstadisticasGuerrero.cs" />
     <Compile Include="Clases\ImagenesCriaturas.cs" />
     <Compile Include="Clases\Textos.cs" />
-    <Compile Include="Forms\CriaturasPersonalizadas.cs">
+    <Compile Include="Forms\formCriaturasPersonalizadas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CriaturasPersonalizadas.Designer.cs">
-      <DependentUpon>CriaturasPersonalizadas.cs</DependentUpon>
+    <Compile Include="Forms\formCriaturasPersonalizadas.Designer.cs">
+      <DependentUpon>formCriaturasPersonalizadas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\EquipoDescripcion.cs">
       <SubType>Form</SubType>
@@ -137,10 +137,13 @@
     <Compile Include="Forms\Pnj.Designer.cs">
       <DependentUpon>Pnj.cs</DependentUpon>
     </Compile>
+    <Compile Include="MordorContext.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\CriaturasPersonalizadas.resx">
-      <DependentUpon>CriaturasPersonalizadas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\formCriaturasPersonalizadas.resx">
+      <DependentUpon>formCriaturasPersonalizadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EquipoDescripcion.resx">
       <DependentUpon>EquipoDescripcion.cs</DependentUpon>

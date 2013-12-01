@@ -190,23 +190,28 @@ namespace LaMarva1._0.Clases
 
         public void llenarComboPnj(ComboBox _Combo)
         {
-            int f = 0;
-            _consulta = "select Pnj_Nombre from Pnj";
-            comando = new SqlCeCommand(_consulta, conexion);
-            conexion.Open();
+            MordorContext mordorCtxt = new MordorContext(conexion);
 
-            valores = comando.ExecuteReader();
+            var todosPnj = from pnj in mordorCtxt.Pnj select pnj.Pnj_Nombre;
 
-            while (valores.Read())
-            {
+            _Combo.DataSource = todosPnj;
+            //int f = 0;
+            //_consulta = "select Pnj_Nombre from Pnj";
+            //comando = new SqlCeCommand(_consulta, conexion);
+            //conexion.Open();
+
+            //valores = comando.ExecuteReader();
+
+            //while (valores.Read())
+            //{
 
 
-                _Combo.Items.Insert(f, valores["Pnj_Nombre"].ToString());
+            //    _Combo.Items.Insert(f, valores["Pnj_Nombre"].ToString());
 
 
-                f = f + 1;
-            }
-            conexion.Close();
+            //    f = f + 1;
+            //}
+            //conexion.Close();
 
         }
     }

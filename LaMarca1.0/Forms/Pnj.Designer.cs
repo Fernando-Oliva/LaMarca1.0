@@ -1,6 +1,6 @@
 ﻿namespace LaMarva1._0
 {
-    partial class Pnj
+    partial class formPnj
     {
         /// <summary>
         /// Required designer variable.

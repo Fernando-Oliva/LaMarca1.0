@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace LaMarva1._0
 {
-    public partial class CriaturasPersonalizadas : Form
+    public partial class formCriaturasPersonalizadas : Form
     {
-        public CriaturasPersonalizadas()
+        public formCriaturasPersonalizadas()
         {
             InitializeComponent();
         }
