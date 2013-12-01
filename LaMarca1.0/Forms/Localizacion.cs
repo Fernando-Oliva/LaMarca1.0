@@ -32,7 +32,5 @@ namespace LaMarva1._0
                 lugares.abrirLocalizacion(nombreLugar, pbImagenLugar, tbDescripcionLugar, lNombreLugar);
             }
         }
-
-
     }
 }

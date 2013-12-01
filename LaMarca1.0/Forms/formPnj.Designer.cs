@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pnj));
-            this.panel2 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPnj));
             this.cbAlineamiento = new System.Windows.Forms.ComboBox();
             this.tbNombrePnj = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,15 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPnjCarga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelectConjuros)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(20, 14);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(394, 108);
-            this.panel2.TabIndex = 20;
             // 
             // cbAlineamiento
             // 
@@ -398,7 +388,7 @@
             this.Descrip_Conj_Pers.ReadOnly = true;
             this.Descrip_Conj_Pers.Width = 119;
             // 
-            // Pnj
+            // formPnj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -429,10 +419,9 @@
             this.Controls.Add(this.tbNombrePnj);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Name = "Pnj";
+            this.Name = "formPnj";
             this.Text = "Pnj";
             this.Load += new System.EventHandler(this.Pnj_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPnjCarga)).EndInit();
@@ -444,7 +433,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cbAlineamiento;
         private System.Windows.Forms.TextBox tbNombrePnj;
         private System.Windows.Forms.Label label2;

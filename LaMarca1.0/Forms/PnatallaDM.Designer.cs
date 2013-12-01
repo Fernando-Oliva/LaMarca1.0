@@ -29,7 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaDM));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTienda = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -193,6 +210,12 @@
             this.panel44 = new System.Windows.Forms.Panel();
             this.pPuertaNegra = new System.Windows.Forms.Panel();
             this.pRobleda = new System.Windows.Forms.Panel();
+            this.ArcanoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Alcance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ArmaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CosteArma = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -210,12 +233,6 @@
             this.TransporteId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CosteTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ArcanoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Alcance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabTienda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -275,7 +292,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1251, 773);
+            this.tabControl1.Size = new System.Drawing.Size(1001, 773);
             this.tabControl1.TabIndex = 0;
             // 
             // tabTienda
@@ -302,8 +319,8 @@
             this.tabTienda.Controls.Add(this.dgvArmas);
             this.tabTienda.Location = new System.Drawing.Point(4, 22);
             this.tabTienda.Name = "tabTienda";
-            this.tabTienda.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTienda.Size = new System.Drawing.Size(1243, 747);
+            this.tabTienda.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabTienda.Size = new System.Drawing.Size(993, 747);
             this.tabTienda.TabIndex = 0;
             this.tabTienda.Text = "Tienda";
             // 
@@ -320,72 +337,76 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(780, 462);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 15);
+            this.label8.Size = new System.Drawing.Size(92, 17);
             this.label8.TabIndex = 24;
             this.label8.Text = "Busqueda: ";
             // 
             // tbBusquedaTransporte
             // 
+            this.tbBusquedaTransporte.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBusquedaTransporte.Location = new System.Drawing.Point(872, 460);
             this.tbBusquedaTransporte.Name = "tbBusquedaTransporte";
-            this.tbBusquedaTransporte.Size = new System.Drawing.Size(149, 19);
+            this.tbBusquedaTransporte.Size = new System.Drawing.Size(149, 23);
             this.tbBusquedaTransporte.TabIndex = 23;
             this.tbBusquedaTransporte.TextChanged += new System.EventHandler(this.tbBusquedaTransporte_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(115, 462);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 15);
+            this.label7.Size = new System.Drawing.Size(92, 17);
             this.label7.TabIndex = 22;
             this.label7.Text = "Busqueda: ";
             // 
             // tbBusquedaEquipo
             // 
+            this.tbBusquedaEquipo.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBusquedaEquipo.Location = new System.Drawing.Point(207, 460);
             this.tbBusquedaEquipo.Name = "tbBusquedaEquipo";
-            this.tbBusquedaEquipo.Size = new System.Drawing.Size(149, 19);
+            this.tbBusquedaEquipo.Size = new System.Drawing.Size(149, 23);
             this.tbBusquedaEquipo.TabIndex = 21;
             this.tbBusquedaEquipo.TextChanged += new System.EventHandler(this.tbBusquedaEquipo_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(850, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 15);
+            this.label6.Size = new System.Drawing.Size(92, 17);
             this.label6.TabIndex = 20;
             this.label6.Text = "Busqueda: ";
             // 
             // tbBusquedaArmadura
             // 
+            this.tbBusquedaArmadura.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBusquedaArmadura.Location = new System.Drawing.Point(942, 10);
             this.tbBusquedaArmadura.Name = "tbBusquedaArmadura";
-            this.tbBusquedaArmadura.Size = new System.Drawing.Size(149, 19);
+            this.tbBusquedaArmadura.Size = new System.Drawing.Size(149, 23);
             this.tbBusquedaArmadura.TabIndex = 19;
             this.tbBusquedaArmadura.TextChanged += new System.EventHandler(this.tbBusquedaArmadura_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("UnZialish", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(215, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 15);
+            this.label5.Size = new System.Drawing.Size(92, 17);
             this.label5.TabIndex = 18;
             this.label5.Text = "Busqueda: ";
             // 
             // tbBusquedaArmas
             // 
+            this.tbBusquedaArmas.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBusquedaArmas.Location = new System.Drawing.Point(307, 10);
             this.tbBusquedaArmas.Name = "tbBusquedaArmas";
-            this.tbBusquedaArmas.Size = new System.Drawing.Size(149, 19);
+            this.tbBusquedaArmas.Size = new System.Drawing.Size(149, 23);
             this.tbBusquedaArmas.TabIndex = 17;
             this.tbBusquedaArmas.TextChanged += new System.EventHandler(this.tbBusquedaArmas_TextChanged);
             // 
@@ -428,6 +449,14 @@
             this.dgvTransporte.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTransporte.BackgroundColor = System.Drawing.Color.White;
             this.dgvTransporte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransporte.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTransporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTransporte.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TransporteId,
@@ -437,6 +466,14 @@
             this.dgvTransporte.MultiSelect = false;
             this.dgvTransporte.Name = "dgvTransporte";
             this.dgvTransporte.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransporte.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvTransporte.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvTransporte.RowTemplate.Height = 24;
             this.dgvTransporte.Size = new System.Drawing.Size(240, 244);
@@ -450,6 +487,14 @@
             this.dgvEquipo.AllowUserToResizeRows = false;
             this.dgvEquipo.BackgroundColor = System.Drawing.Color.White;
             this.dgvEquipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEquipo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvEquipo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEquipo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EquipoId,
@@ -497,6 +542,14 @@
             this.dgvArmaduras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArmaduras.BackgroundColor = System.Drawing.Color.White;
             this.dgvArmaduras.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArmaduras.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvArmaduras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArmaduras.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ArmaduraId,
@@ -522,14 +575,14 @@
             this.dgvArmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArmas.BackgroundColor = System.Drawing.Color.White;
             this.dgvArmas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvArmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArmas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ArmaId,
@@ -575,7 +628,7 @@
             this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1243, 747);
+            this.tabPage1.Size = new System.Drawing.Size(993, 747);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Crear PNJs";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -637,9 +690,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(35, 138);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(119, 13);
+            this.label25.Size = new System.Drawing.Size(145, 15);
             this.label25.TabIndex = 44;
             this.label25.Text = "Selecciona un PNJ:";
             // 
@@ -666,10 +720,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("UnZialish", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(444, 39);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(176, 36);
+            this.label11.Size = new System.Drawing.Size(222, 43);
             this.label11.TabIndex = 18;
             this.label11.Text = "Nuevo PNJ";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -900,9 +954,10 @@
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(8, 395);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(187, 13);
+            this.label26.Size = new System.Drawing.Size(241, 15);
             this.label26.TabIndex = 25;
             this.label26.Text = "Selecciona el Libro de Conjuros";
             // 
@@ -1032,9 +1087,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(38, 129);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(147, 13);
+            this.label9.Size = new System.Drawing.Size(197, 15);
             this.label9.TabIndex = 34;
             this.label9.Text = "Selecciona una Criatura:";
             // 
@@ -1080,13 +1136,14 @@
             // 
             // cbCriaturas
             // 
+            this.cbCriaturas.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCriaturas.FormattingEnabled = true;
             this.cbCriaturas.Items.AddRange(new object[] {
             "Aboleth",
             "Ankheg"});
             this.cbCriaturas.Location = new System.Drawing.Point(237, 124);
             this.cbCriaturas.Name = "cbCriaturas";
-            this.cbCriaturas.Size = new System.Drawing.Size(121, 21);
+            this.cbCriaturas.Size = new System.Drawing.Size(121, 23);
             this.cbCriaturas.TabIndex = 29;
             this.cbCriaturas.Text = "Aboleth";
             this.cbCriaturas.SelectedIndexChanged += new System.EventHandler(this.cbCriaturas_SelectedIndexChanged);
@@ -1407,9 +1464,10 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(27, 123);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(147, 13);
+            this.label13.Size = new System.Drawing.Size(197, 15);
             this.label13.TabIndex = 52;
             this.label13.Text = "Selecciona una Criatura:";
             // 
@@ -1454,10 +1512,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("UnZialish", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(530, 48);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(228, 36);
+            this.label10.Size = new System.Drawing.Size(325, 43);
             this.label10.TabIndex = 17;
             this.label10.Text = "Nueva Criatura";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -1850,7 +1908,7 @@
             // 
             // btLanzarD4
             // 
-            this.btLanzarD4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD4.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLanzarD4.Location = new System.Drawing.Point(431, 30);
             this.btLanzarD4.Name = "btLanzarD4";
             this.btLanzarD4.Size = new System.Drawing.Size(86, 49);
@@ -1872,7 +1930,7 @@
             // 
             // btLanzarD6
             // 
-            this.btLanzarD6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD6.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLanzarD6.Location = new System.Drawing.Point(590, 30);
             this.btLanzarD6.Name = "btLanzarD6";
             this.btLanzarD6.Size = new System.Drawing.Size(86, 49);
@@ -1894,7 +1952,7 @@
             // 
             // btLanzarD8
             // 
-            this.btLanzarD8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD8.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLanzarD8.Location = new System.Drawing.Point(735, 30);
             this.btLanzarD8.Name = "btLanzarD8";
             this.btLanzarD8.Size = new System.Drawing.Size(86, 49);
@@ -1916,7 +1974,7 @@
             // 
             // btLanzarD10
             // 
-            this.btLanzarD10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD10.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLanzarD10.Location = new System.Drawing.Point(431, 186);
             this.btLanzarD10.Name = "btLanzarD10";
             this.btLanzarD10.Size = new System.Drawing.Size(86, 49);
@@ -1938,7 +1996,7 @@
             // 
             // btLanzarD12
             // 
-            this.btLanzarD12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD12.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLanzarD12.Location = new System.Drawing.Point(590, 186);
             this.btLanzarD12.Name = "btLanzarD12";
             this.btLanzarD12.Size = new System.Drawing.Size(86, 49);
@@ -1969,7 +2027,7 @@
             // 
             // btLanzarD20
             // 
-            this.btLanzarD20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLanzarD20.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLanzarD20.Location = new System.Drawing.Point(735, 186);
             this.btLanzarD20.Name = "btLanzarD20";
             this.btLanzarD20.Size = new System.Drawing.Size(86, 49);
@@ -2026,7 +2084,7 @@
             this.tabPage8.Controls.Add(this.panel44);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1243, 747);
+            this.tabPage8.Size = new System.Drawing.Size(993, 747);
             this.tabPage8.TabIndex = 8;
             this.tabPage8.Text = "Mapa v1.0";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -2035,10 +2093,11 @@
             // 
             this.gbLugares.Controls.Add(this.lPuertaNegra);
             this.gbLugares.Controls.Add(this.lRobleda);
+            this.gbLugares.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbLugares.Location = new System.Drawing.Point(1148, 19);
-            this.gbLugares.Margin = new System.Windows.Forms.Padding(2);
+            this.gbLugares.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbLugares.Name = "gbLugares";
-            this.gbLugares.Padding = new System.Windows.Forms.Padding(2);
+            this.gbLugares.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbLugares.Size = new System.Drawing.Size(227, 707);
             this.gbLugares.TabIndex = 2;
             this.gbLugares.TabStop = false;
@@ -2048,11 +2107,11 @@
             // 
             this.lPuertaNegra.AutoSize = true;
             this.lPuertaNegra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lPuertaNegra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lPuertaNegra.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lPuertaNegra.Location = new System.Drawing.Point(23, 49);
             this.lPuertaNegra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lPuertaNegra.Name = "lPuertaNegra";
-            this.lPuertaNegra.Size = new System.Drawing.Size(108, 13);
+            this.lPuertaNegra.Size = new System.Drawing.Size(142, 15);
             this.lPuertaNegra.TabIndex = 2;
             this.lPuertaNegra.Text = "- La Puerta Negra";
             this.lPuertaNegra.Click += new System.EventHandler(this.lPuertaNegra_Click);
@@ -2061,11 +2120,11 @@
             // 
             this.lRobleda.AutoSize = true;
             this.lRobleda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lRobleda.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lRobleda.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lRobleda.Location = new System.Drawing.Point(23, 33);
             this.lRobleda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lRobleda.Name = "lRobleda";
-            this.lRobleda.Size = new System.Drawing.Size(62, 13);
+            this.lRobleda.Size = new System.Drawing.Size(78, 15);
             this.lRobleda.TabIndex = 1;
             this.lRobleda.Text = "- Robleda";
             this.lRobleda.Click += new System.EventHandler(this.lRobleda_Click);
@@ -2102,130 +2161,6 @@
             this.pRobleda.Size = new System.Drawing.Size(44, 34);
             this.pRobleda.TabIndex = 2;
             this.pRobleda.Click += new System.EventHandler(this.pRobleda_Click);
-            // 
-            // ArmaId
-            // 
-            this.ArmaId.DataPropertyName = "Arma_Id";
-            this.ArmaId.HeaderText = "ArmaId";
-            this.ArmaId.Name = "ArmaId";
-            this.ArmaId.ReadOnly = true;
-            this.ArmaId.Visible = false;
-            // 
-            // NombreArma
-            // 
-            this.NombreArma.DataPropertyName = "Arma_Nombre";
-            this.NombreArma.HeaderText = "Nombre";
-            this.NombreArma.Name = "NombreArma";
-            this.NombreArma.ReadOnly = true;
-            // 
-            // CosteArma
-            // 
-            this.CosteArma.DataPropertyName = "Arma_Coste";
-            this.CosteArma.HeaderText = "Coste";
-            this.CosteArma.Name = "CosteArma";
-            this.CosteArma.ReadOnly = true;
-            // 
-            // DanioArma
-            // 
-            this.DanioArma.DataPropertyName = "Arma_Danio";
-            this.DanioArma.HeaderText = "Daño";
-            this.DanioArma.Name = "DanioArma";
-            this.DanioArma.ReadOnly = true;
-            // 
-            // PesoArma
-            // 
-            this.PesoArma.DataPropertyName = "Arma_Peso";
-            this.PesoArma.HeaderText = "Peso";
-            this.PesoArma.Name = "PesoArma";
-            this.PesoArma.ReadOnly = true;
-            // 
-            // ArmaduraId
-            // 
-            this.ArmaduraId.DataPropertyName = "Armadura_Id";
-            this.ArmaduraId.HeaderText = "ArmaduraId";
-            this.ArmaduraId.Name = "ArmaduraId";
-            this.ArmaduraId.ReadOnly = true;
-            this.ArmaduraId.Visible = false;
-            // 
-            // NombreArmadura
-            // 
-            this.NombreArmadura.DataPropertyName = "Armadura_Nombre";
-            this.NombreArmadura.HeaderText = "Nombre";
-            this.NombreArmadura.Name = "NombreArmadura";
-            this.NombreArmadura.ReadOnly = true;
-            // 
-            // CosteArmadura
-            // 
-            this.CosteArmadura.DataPropertyName = "Armadura_Coste";
-            this.CosteArmadura.HeaderText = "Coste";
-            this.CosteArmadura.Name = "CosteArmadura";
-            this.CosteArmadura.ReadOnly = true;
-            // 
-            // CAArmadura
-            // 
-            this.CAArmadura.DataPropertyName = "Armadura_CA";
-            this.CAArmadura.HeaderText = "CA";
-            this.CAArmadura.Name = "CAArmadura";
-            this.CAArmadura.ReadOnly = true;
-            // 
-            // PesoArmadura
-            // 
-            this.PesoArmadura.DataPropertyName = "Armadura_Peso";
-            this.PesoArmadura.HeaderText = "Peso";
-            this.PesoArmadura.Name = "PesoArmadura";
-            this.PesoArmadura.ReadOnly = true;
-            // 
-            // EquipoId
-            // 
-            this.EquipoId.DataPropertyName = "Equipo_Id";
-            this.EquipoId.HeaderText = "EquipoId";
-            this.EquipoId.Name = "EquipoId";
-            this.EquipoId.ReadOnly = true;
-            this.EquipoId.Visible = false;
-            // 
-            // NombreEquipo
-            // 
-            this.NombreEquipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NombreEquipo.DataPropertyName = "Equipo_Nombre";
-            this.NombreEquipo.HeaderText = "Nombre";
-            this.NombreEquipo.Name = "NombreEquipo";
-            this.NombreEquipo.ReadOnly = true;
-            // 
-            // EquipoCoste
-            // 
-            this.EquipoCoste.DataPropertyName = "Equipo_Coste";
-            this.EquipoCoste.HeaderText = "Coste";
-            this.EquipoCoste.Name = "EquipoCoste";
-            this.EquipoCoste.ReadOnly = true;
-            // 
-            // EquipoPeso
-            // 
-            this.EquipoPeso.DataPropertyName = "Equipo_Peso";
-            this.EquipoPeso.HeaderText = "Peso";
-            this.EquipoPeso.Name = "EquipoPeso";
-            this.EquipoPeso.ReadOnly = true;
-            // 
-            // TransporteId
-            // 
-            this.TransporteId.DataPropertyName = "Transporte_Id";
-            this.TransporteId.HeaderText = "TransporteId";
-            this.TransporteId.Name = "TransporteId";
-            this.TransporteId.ReadOnly = true;
-            this.TransporteId.Visible = false;
-            // 
-            // NombreTransporte
-            // 
-            this.NombreTransporte.DataPropertyName = "Transporte_Nombre";
-            this.NombreTransporte.HeaderText = "Nombre";
-            this.NombreTransporte.Name = "NombreTransporte";
-            this.NombreTransporte.ReadOnly = true;
-            // 
-            // CosteTransporte
-            // 
-            this.CosteTransporte.DataPropertyName = "Transporte_Coste";
-            this.CosteTransporte.HeaderText = "Coste";
-            this.CosteTransporte.Name = "CosteTransporte";
-            this.CosteTransporte.ReadOnly = true;
             // 
             // ArcanoId
             // 
@@ -2270,11 +2205,161 @@
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
             // 
+            // ArmaId
+            // 
+            this.ArmaId.DataPropertyName = "Arma_Id";
+            this.ArmaId.HeaderText = "ArmaId";
+            this.ArmaId.Name = "ArmaId";
+            this.ArmaId.ReadOnly = true;
+            this.ArmaId.Visible = false;
+            // 
+            // NombreArma
+            // 
+            this.NombreArma.DataPropertyName = "Arma_Nombre";
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreArma.DefaultCellStyle = dataGridViewCellStyle15;
+            this.NombreArma.HeaderText = "Nombre";
+            this.NombreArma.Name = "NombreArma";
+            this.NombreArma.ReadOnly = true;
+            // 
+            // CosteArma
+            // 
+            this.CosteArma.DataPropertyName = "Arma_Coste";
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CosteArma.DefaultCellStyle = dataGridViewCellStyle16;
+            this.CosteArma.HeaderText = "Coste";
+            this.CosteArma.Name = "CosteArma";
+            this.CosteArma.ReadOnly = true;
+            // 
+            // DanioArma
+            // 
+            this.DanioArma.DataPropertyName = "Arma_Danio";
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DanioArma.DefaultCellStyle = dataGridViewCellStyle17;
+            this.DanioArma.HeaderText = "Daño";
+            this.DanioArma.Name = "DanioArma";
+            this.DanioArma.ReadOnly = true;
+            // 
+            // PesoArma
+            // 
+            this.PesoArma.DataPropertyName = "Arma_Peso";
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PesoArma.DefaultCellStyle = dataGridViewCellStyle18;
+            this.PesoArma.HeaderText = "Peso";
+            this.PesoArma.Name = "PesoArma";
+            this.PesoArma.ReadOnly = true;
+            // 
+            // ArmaduraId
+            // 
+            this.ArmaduraId.DataPropertyName = "Armadura_Id";
+            this.ArmaduraId.HeaderText = "ArmaduraId";
+            this.ArmaduraId.Name = "ArmaduraId";
+            this.ArmaduraId.ReadOnly = true;
+            this.ArmaduraId.Visible = false;
+            // 
+            // NombreArmadura
+            // 
+            this.NombreArmadura.DataPropertyName = "Armadura_Nombre";
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreArmadura.DefaultCellStyle = dataGridViewCellStyle10;
+            this.NombreArmadura.HeaderText = "Nombre";
+            this.NombreArmadura.Name = "NombreArmadura";
+            this.NombreArmadura.ReadOnly = true;
+            // 
+            // CosteArmadura
+            // 
+            this.CosteArmadura.DataPropertyName = "Armadura_Coste";
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CosteArmadura.DefaultCellStyle = dataGridViewCellStyle11;
+            this.CosteArmadura.HeaderText = "Coste";
+            this.CosteArmadura.Name = "CosteArmadura";
+            this.CosteArmadura.ReadOnly = true;
+            // 
+            // CAArmadura
+            // 
+            this.CAArmadura.DataPropertyName = "Armadura_CA";
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAArmadura.DefaultCellStyle = dataGridViewCellStyle12;
+            this.CAArmadura.HeaderText = "CA";
+            this.CAArmadura.Name = "CAArmadura";
+            this.CAArmadura.ReadOnly = true;
+            // 
+            // PesoArmadura
+            // 
+            this.PesoArmadura.DataPropertyName = "Armadura_Peso";
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PesoArmadura.DefaultCellStyle = dataGridViewCellStyle13;
+            this.PesoArmadura.HeaderText = "Peso";
+            this.PesoArmadura.Name = "PesoArmadura";
+            this.PesoArmadura.ReadOnly = true;
+            // 
+            // EquipoId
+            // 
+            this.EquipoId.DataPropertyName = "Equipo_Id";
+            this.EquipoId.HeaderText = "EquipoId";
+            this.EquipoId.Name = "EquipoId";
+            this.EquipoId.ReadOnly = true;
+            this.EquipoId.Visible = false;
+            // 
+            // NombreEquipo
+            // 
+            this.NombreEquipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NombreEquipo.DataPropertyName = "Equipo_Nombre";
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreEquipo.DefaultCellStyle = dataGridViewCellStyle6;
+            this.NombreEquipo.HeaderText = "Nombre";
+            this.NombreEquipo.Name = "NombreEquipo";
+            this.NombreEquipo.ReadOnly = true;
+            // 
+            // EquipoCoste
+            // 
+            this.EquipoCoste.DataPropertyName = "Equipo_Coste";
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EquipoCoste.DefaultCellStyle = dataGridViewCellStyle7;
+            this.EquipoCoste.HeaderText = "Coste";
+            this.EquipoCoste.Name = "EquipoCoste";
+            this.EquipoCoste.ReadOnly = true;
+            // 
+            // EquipoPeso
+            // 
+            this.EquipoPeso.DataPropertyName = "Equipo_Peso";
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EquipoPeso.DefaultCellStyle = dataGridViewCellStyle8;
+            this.EquipoPeso.HeaderText = "Peso";
+            this.EquipoPeso.Name = "EquipoPeso";
+            this.EquipoPeso.ReadOnly = true;
+            // 
+            // TransporteId
+            // 
+            this.TransporteId.DataPropertyName = "Transporte_Id";
+            this.TransporteId.HeaderText = "TransporteId";
+            this.TransporteId.Name = "TransporteId";
+            this.TransporteId.ReadOnly = true;
+            this.TransporteId.Visible = false;
+            // 
+            // NombreTransporte
+            // 
+            this.NombreTransporte.DataPropertyName = "Transporte_Nombre";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NombreTransporte.DefaultCellStyle = dataGridViewCellStyle2;
+            this.NombreTransporte.HeaderText = "Nombre";
+            this.NombreTransporte.Name = "NombreTransporte";
+            this.NombreTransporte.ReadOnly = true;
+            // 
+            // CosteTransporte
+            // 
+            this.CosteTransporte.DataPropertyName = "Transporte_Coste";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("UnZialish", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CosteTransporte.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CosteTransporte.HeaderText = "Coste";
+            this.CosteTransporte.Name = "CosteTransporte";
+            this.CosteTransporte.ReadOnly = true;
+            // 
             // PantallaDM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1251, 773);
+            this.ClientSize = new System.Drawing.Size(1001, 773);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PantallaDM";
@@ -2521,16 +2606,12 @@
         private System.Windows.Forms.Label lRobleda;
         private System.Windows.Forms.GroupBox gbLugares;
         private System.Windows.Forms.Label lPuertaNegra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ArmaId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DanioArma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ArmaduraId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArmadura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArmadura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CAArmadura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ArcanoId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nivel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Alcance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Duracion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn TransporteId;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreTransporte;
         private System.Windows.Forms.DataGridViewTextBoxColumn CosteTransporte;
@@ -2538,11 +2619,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreEquipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn EquipoCoste;
         private System.Windows.Forms.DataGridViewTextBoxColumn EquipoPeso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ArcanoId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nivel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Alcance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Duracion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ArmaduraId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CAArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArmadura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ArmaId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreArma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CosteArma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DanioArma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PesoArma;
     }
 }
