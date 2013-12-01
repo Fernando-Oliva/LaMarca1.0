@@ -59,10 +59,13 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>CalaveraIcono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
@@ -122,11 +125,6 @@
     <Compile Include="Forms\Localizacion.Designer.cs">
       <DependentUpon>Localizacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="MordorDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MordorDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Forms\PnatallaDM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,7 +170,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Fuentes\lazymonkdemo.ttf" />
     <None Include="Fuentes\UnZialish.ttf" />
     <None Include="LaMarca1.0_TemporaryKey.pfx" />
@@ -181,7 +181,6 @@
     </None>
     <None Include="MordorDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MordorDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="MordorDataSet.xss">

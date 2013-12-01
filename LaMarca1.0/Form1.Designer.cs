@@ -42,42 +42,38 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.pMasterScreen);
             this.panel1.Controls.Add(this.pInfo);
-            this.panel1.Location = new System.Drawing.Point(16, 31);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(12, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(675, 393);
+            this.panel1.Size = new System.Drawing.Size(656, 393);
             this.panel1.TabIndex = 0;
             // 
             // pMasterScreen
             // 
             this.pMasterScreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pMasterScreen.Location = new System.Drawing.Point(61, 193);
-            this.pMasterScreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pMasterScreen.Location = new System.Drawing.Point(64, 192);
             this.pMasterScreen.Name = "pMasterScreen";
-            this.pMasterScreen.Size = new System.Drawing.Size(531, 38);
+            this.pMasterScreen.Size = new System.Drawing.Size(522, 31);
             this.pMasterScreen.TabIndex = 1;
             this.pMasterScreen.Click += new System.EventHandler(this.pMasterScreen_Click);
             // 
             // pInfo
             // 
             this.pInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pInfo.Location = new System.Drawing.Point(263, 267);
-            this.pInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pInfo.Location = new System.Drawing.Point(275, 272);
             this.pInfo.Name = "pInfo";
-            this.pInfo.Size = new System.Drawing.Size(119, 38);
+            this.pInfo.Size = new System.Drawing.Size(103, 31);
             this.pInfo.TabIndex = 0;
             this.pInfo.Click += new System.EventHandler(this.pInfo_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1027, 801);
+            this.ClientSize = new System.Drawing.Size(770, 651);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "LaMarca1.0";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
