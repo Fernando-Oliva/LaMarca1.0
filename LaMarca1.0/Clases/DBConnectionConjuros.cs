@@ -11,62 +11,31 @@ namespace LaMarva1._0.Clases
     class DBConnectionConjuros
     {
         #region Declaraciones
-        SqlCeCommand comando;
-        SqlCeDataReader valores;
-        string _consulta;
-        int f;
-        //SqlCeConnection conexion = new SqlCeConnection(DBConnectionConfig.dbConnection);
-
         SqlCeConnection conexion = new SqlCeConnection(ConfigurationManager.ConnectionStrings["LaMarva1._0.Properties.Settings.MordorConnectionString"].ToString());
-
         #endregion
 
         public void llenarArcanos(DataGridView dgvReceived)
         {
-            f = 0;
-            _consulta = "select C_Arcano_Nivel, C_Arcano_Nombre, C_Arcano_Alcance, C_Arcano_Duracion, C_Arcano_Descripcion from ConjurosArcanos";
-            comando = new SqlCeCommand(_consulta, conexion);
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            conexion.Open();
+            var arcanos = from arcano in mordorctxt.ConjurosArcanos
+                          select arcano;
 
-            valores = comando.ExecuteReader();
+            dgvReceived.DataSource = arcanos;
 
-            while (valores.Read())
-            {
-                dgvReceived.Rows.Add();
-                dgvReceived[0, f].Value = valores["C_Arcano_Nivel"].ToString();
-                dgvReceived[1, f].Value = valores["C_Arcano_Nombre"].ToString();
-                dgvReceived[2, f].Value = valores["C_Arcano_Alcance"].ToString();
-                dgvReceived[3, f].Value = valores["C_Arcano_Duracion"].ToString();
-                dgvReceived[4, f].Value = valores["C_Arcano_Descripcion"].ToString();
-
-                f = f + 1;
-            }
-            conexion.Close();
+            mordorctxt.Connection.Close();
         }
 
         public void llenarDivinos(DataGridView dgvReceived)
         {
-            f = 0;
-            _consulta = "select C_Divino_Nivel, C_Divino_Nombre, C_Divino_Alcance, C_Divino_Duracion, C_Divino_Descripcion from ConjurosDivinos";
-            comando = new SqlCeCommand(_consulta, conexion);
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            conexion.Open();
+            var divinos = from divino in mordorctxt.ConjurosDivinos
+                          select divino;
 
-            valores = comando.ExecuteReader();
+            dgvReceived.DataSource = divinos;
 
-            while (valores.Read())
-            {
-                dgvReceived.Rows.Add();
-                dgvReceived[0, f].Value = valores["C_Divino_Nivel"].ToString();
-                dgvReceived[1, f].Value = valores["C_Divino_Nombre"].ToString();
-                dgvReceived[2, f].Value = valores["C_Divino_Alcance"].ToString();
-                dgvReceived[3, f].Value = valores["C_Divino_Duracion"].ToString();
-                dgvReceived[4, f].Value = valores["C_Divino_Descripcion"].ToString();
-
-                f = f + 1;
-            }
-            conexion.Close();
+            mordorctxt.Connection.Close();
         }
     }
 }

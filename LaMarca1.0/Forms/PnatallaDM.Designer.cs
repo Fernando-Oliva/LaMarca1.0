@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaDM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTienda = new System.Windows.Forms.TabPage();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -89,11 +89,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.cbConjuros = new System.Windows.Forms.ComboBox();
             this.dgvConjuros = new System.Windows.Forms.DataGridView();
-            this.Nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Alcance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -215,6 +210,12 @@
             this.TransporteId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CosteTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ArcanoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Alcance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabTienda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -521,14 +522,14 @@
             this.dgvArmas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArmas.BackgroundColor = System.Drawing.Color.White;
             this.dgvArmas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvArmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArmas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ArmaId,
@@ -924,6 +925,7 @@
             this.dgvConjuros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvConjuros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConjuros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ArcanoId,
             this.Nivel,
             this.Nombre,
             this.Alcance,
@@ -935,36 +937,6 @@
             this.dgvConjuros.RowTemplate.Height = 24;
             this.dgvConjuros.Size = new System.Drawing.Size(1097, 214);
             this.dgvConjuros.TabIndex = 18;
-            // 
-            // Nivel
-            // 
-            this.Nivel.HeaderText = "Nivel";
-            this.Nivel.Name = "Nivel";
-            this.Nivel.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Alcance
-            // 
-            this.Alcance.HeaderText = "Alcance";
-            this.Alcance.Name = "Alcance";
-            this.Alcance.ReadOnly = true;
-            // 
-            // Duracion
-            // 
-            this.Duracion.HeaderText = "Duracion";
-            this.Duracion.Name = "Duracion";
-            this.Duracion.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
             // 
             // pictureBox4
             // 
@@ -2255,6 +2227,49 @@
             this.CosteTransporte.Name = "CosteTransporte";
             this.CosteTransporte.ReadOnly = true;
             // 
+            // ArcanoId
+            // 
+            this.ArcanoId.DataPropertyName = "C_Arcano_Id";
+            this.ArcanoId.HeaderText = "ArcanoId";
+            this.ArcanoId.Name = "ArcanoId";
+            this.ArcanoId.ReadOnly = true;
+            this.ArcanoId.Visible = false;
+            // 
+            // Nivel
+            // 
+            this.Nivel.DataPropertyName = "C_Arcano_Nivel";
+            this.Nivel.HeaderText = "Nivel";
+            this.Nivel.Name = "Nivel";
+            this.Nivel.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "C_Arcano_Nombre";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Alcance
+            // 
+            this.Alcance.DataPropertyName = "C_Arcano_Alcance";
+            this.Alcance.HeaderText = "Alcance";
+            this.Alcance.Name = "Alcance";
+            this.Alcance.ReadOnly = true;
+            // 
+            // Duracion
+            // 
+            this.Duracion.DataPropertyName = "C_Arcano_Duracion";
+            this.Duracion.HeaderText = "Duracion";
+            this.Duracion.Name = "Duracion";
+            this.Duracion.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "C_Arcano_Descripcion";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
             // PantallaDM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2488,11 +2503,6 @@
         private System.Windows.Forms.Label lVidaPnj;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.DataGridView dgvConjuros;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nivel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Alcance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Duracion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cbConjuros;
         private System.Windows.Forms.Label lAlinPnj;
@@ -2528,5 +2538,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreEquipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn EquipoCoste;
         private System.Windows.Forms.DataGridViewTextBoxColumn EquipoPeso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ArcanoId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nivel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Alcance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Duracion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
     }
 }
