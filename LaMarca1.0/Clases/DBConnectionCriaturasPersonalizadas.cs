@@ -12,9 +12,6 @@ namespace LaMarva1._0.Clases
     {
         #region Declaraciones
         SqlCeConnection conexion = new SqlCeConnection(ConfigurationManager.ConnectionStrings["LaMarva1._0.Properties.Settings.MordorConnectionString"].ToString());
-        SqlCeCommand comando;
-        SqlCeDataReader valores;
-        string _consulta;
         #endregion
 
        
@@ -46,87 +43,86 @@ namespace LaMarva1._0.Clases
             int sorti = Convert.ToInt32(_sorti);
             #endregion
 
-            MordorContext mordorCtxt = new MordorContext(conexion);
+            MordorContext mordorctxt = new MordorContext(conexion);
 
+            foreach (var criatura in mordorctxt.CriaturasPersonalizadas)
+            {
+                criatura.Criatura_Nombre = _nombre;
+                criatura.Criatura_CA_Neg = ca;
+                criatura.Criatura_CA_Pos = caPos;
+                criatura.Criatura_Vida_Media = vida;
+                criatura.Criatura_Vida_Max = vidaMax;
+                criatura.Criatura_Ataque = ataque;
+                criatura.Criatura_Ataque_I = _armasI;
+                criatura.Criatura_Ataque_II = _armasII;
+                criatura.Criatura_S_VenMuer = sVeneno;
+                criatura.Criatura_S_Varitas = sVaritas;
+                criatura.Criatura_S_PetrifParal = sPetrif;
+                criatura.Criatura_S_AlienDrag = aliDrag;
+                criatura.Criatura_S_Sortilegios = sorti;
+                criatura.Criatura_Mov = mov;
+                criatura.Criatura_Moral = moral;
+                criatura.Criatura_ValorTesoro = tesoro;
+                criatura.Criatura_Alineam = _alineam;
+                criatura.Criatura_ValorPX = px;
+                criatura.Criatura_DG = dg;
+                criatura.Criatura_Habilidades_I = _habilI;
+                criatura.Criatura_Habilidades_II = _habilII;
+                criatura.Criatura_Ruta = _ruta;
 
+                mordorctxt.CriaturasPersonalizadas.InsertOnSubmit(criatura);
+            }
 
-
-
-            _consulta = "insert into CriaturasPersonalizadas values ('" + _nombre + "'," + ca + "," + caPos +
-                        "," + vida + "," + vidaMax + "," + ataque + ",'" + _armasI + "','" + _armasII + "'," + sVeneno +
-                        "," + sVaritas + "," + sPetrif + "," + aliDrag + "," + sorti + "," + mov + "," + moral +
-                        "," + tesoro + ",'" + _alineam + "'," + px + "," + dg + ",'" + _habilI + "','" + _habilII + "','" + _ruta + "')";
-
-            comando = new SqlCeCommand(_consulta, conexion);
-
-            conexion.Open();
-            comando.ExecuteNonQuery();
-         
-            conexion.Close();
+            mordorctxt.Connection.Close();
         }
 
         public void llenarComboCriaturas(ComboBox _Combo)
         {
-            int f = 0;
-            _consulta = "select Criatura_Nombre from CriaturasPersonalizadas";
-            comando = new SqlCeCommand(_consulta, conexion);
-            conexion.Open();
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            valores = comando.ExecuteReader();
+            var criaturaNombre = from criatura in mordorctxt.CriaturasPersonalizadas
+                                 select criatura.Criatura_Nombre;
 
-            while (valores.Read())
-            {
-            
+            _Combo.Items.Add(criaturaNombre);
 
-                _Combo.Items.Insert(f,valores["Criatura_Nombre"].ToString());
-
-
-                f = f + 1;
-            }
-            conexion.Close();
-
+            mordorctxt.Connection.Close();
         }
 
         public void llenarCriaturaPersonalizada(string _nombrecb, Label _Nombre, Label _VidaMed, Label _PX, Label _armCombI,
                                    Label _armCombII, Label _DG, Label _Moral, Label _Tesoro, Label _CA, Label _Alineam, Label _Movi,
                                    Label _SalVen, Label _SalVar, Label _SalPetrif, Label _SalAlienD, Label _SalSort, Label _HabilI, Label _HabilII, PictureBox _Imagen, Label _Ataque)
         {
-            _consulta = "select Criatura_Nombre, Criatura_CA_Neg, Criatura_Vida_Media, Criatura_Ataque," +
-                                   "Criatura_Moral, Criatura_ValorPX, Criatura_DG, Criatura_Ataque_I, Criatura_Ataque_II," +
-                                   "Criatura_ValorTesoro, Criatura_Alineam, Criatura_Mov, Criatura_S_AlienDrag, " +
-                                   "Criatura_S_VenMuer, Criatura_S_PetrifParal, Criatura_S_Sortilegios," +
-                                   "Criatura_Habilidades_I, Criatura_Habilidades_II, Criatura_S_Varitas, Criatura_Ruta from CriaturasPersonalizadas where Criatura_Nombre = '" + _nombrecb + "'";
-            comando = new SqlCeCommand(_consulta, conexion);
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            conexion.Open();
+            var criaturas = from criatura in mordorctxt.CriaturasPersonalizadas
+                            where criatura.Criatura_Nombre.Contains(_nombrecb)
+                            select criatura;
 
-            valores = comando.ExecuteReader();
-
-            while (valores.Read())
+            foreach (var criatura in criaturas)
             {
-
-                _Nombre.Text = "- " + valores["Criatura_Nombre"].ToString() + " -";
-                _VidaMed.Text = valores["Criatura_Vida_Media"].ToString();
-                _CA.Text = valores["Criatura_CA_Neg"].ToString();
-                _Moral.Text = valores["Criatura_Moral"].ToString();
-                _PX.Text = valores["Criatura_ValorPX"].ToString();
-                _DG.Text = valores["Criatura_DG"].ToString();
-                _armCombI.Text = valores["Criatura_Ataque_I"].ToString();
-                _armCombII.Text = valores["Criatura_Ataque_II"].ToString();
-                _Tesoro.Text = valores["Criatura_ValorTesoro"].ToString();
-                _Alineam.Text = valores["Criatura_Alineam"].ToString();
-                _Movi.Text = valores["Criatura_Mov"].ToString();
-                _SalAlienD.Text = valores["Criatura_S_AlienDrag"].ToString();
-                _SalVen.Text = valores["Criatura_S_VenMuer"].ToString();
-                _SalPetrif.Text = valores["Criatura_S_PetrifParal"].ToString();
-                _SalSort.Text = valores["Criatura_S_Sortilegios"].ToString();
-                _SalVar.Text = valores["Criatura_S_Varitas"].ToString();
-                _HabilI.Text = valores["Criatura_Habilidades_I"].ToString();
-                _HabilII.Text = valores["Criatura_Habilidades_II"].ToString();
-                _Imagen.ImageLocation = valores["Criatura_Ruta"].ToString();
-                _Ataque.Text = valores["Criatura_Ataque"].ToString();
+                _Nombre.Text = criatura.Criatura_Nombre;
+                _VidaMed.Text = criatura.Criatura_Vida_Media.ToString();
+                _CA.Text = criatura.Criatura_CA_Neg.ToString();
+                _Moral.Text = criatura.Criatura_Moral.ToString();
+                _PX.Text = criatura.Criatura_ValorPX.ToString();
+                _DG.Text = criatura.Criatura_DG.ToString();
+                _armCombI.Text = criatura.Criatura_Ataque_I;
+                _armCombII.Text = criatura.Criatura_Ataque_II;
+                _Tesoro.Text = criatura.Criatura_ValorTesoro.ToString();
+                _Alineam.Text = criatura.Criatura_Alineam;
+                _Movi.Text = criatura.Criatura_Mov.ToString();
+                _SalAlienD.Text = criatura.Criatura_S_AlienDrag.ToString();
+                _SalVen.Text = criatura.Criatura_S_VenMuer.ToString();
+                _SalPetrif.Text = criatura.Criatura_S_PetrifParal.ToString();
+                _SalSort.Text = criatura.Criatura_S_Sortilegios.ToString();
+                _SalVar.Text = criatura.Criatura_S_Varitas.ToString();
+                _HabilI.Text = criatura.Criatura_Habilidades_I;
+                _HabilII.Text = criatura.Criatura_Habilidades_II;
+                _Imagen.ImageLocation = criatura.Criatura_Ruta;
+                _Ataque.Text = criatura.Criatura_Ataque.ToString();
             }
-            conexion.Close();
+
+            mordorctxt.Connection.Close();
         }
     }
 }

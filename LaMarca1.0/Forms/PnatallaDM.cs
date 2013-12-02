@@ -134,7 +134,7 @@ namespace LaMarva1._0
 
         private void cbCriaturas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bichos.llenarCriatura2(cbCriaturas.Text, lNombreC, lVida, lPX, lArmasCombI, lArmasCombII, lDG, lMoral, lTesoro, lCA, lAlineamiento, lMovimiento, lSVen, lSVar, lSPetrif, lSAliD, lSSort,lHabilidadI,lHabilidadII,lAtaque);
+            bichos.llenarCriatura(cbCriaturas.Text, lNombreC, lVida, lPX, lArmasCombI, lArmasCombII, lDG, lMoral, lTesoro, lCA, lAlineamiento, lMovimiento, lSVen, lSVar, lSPetrif, lSAliD, lSSort,lHabilidadI,lHabilidadII,lAtaque);
             imgCriatura.colocarImagen(cbCriaturas.Text, pbCriatura);
             _vidaMax = Convert.ToInt32(bichos.vidaMaxima(cbCriaturas.Text));
         }
