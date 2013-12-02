@@ -186,8 +186,8 @@ namespace LaMarva1._0
 
         private void cbPnj_Click(object sender, EventArgs e)
         {
-            cbPnj.Items.Clear();
-            pnjs.llenarComboPnj(cbPnj);
+            //cbPnj.Items.Clear();
+            //pnjs.llenarComboPnj(cbPnj);
         }
 
         private void cbSelecCriatura_Click(object sender, EventArgs e)

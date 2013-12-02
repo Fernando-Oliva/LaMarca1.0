@@ -13,9 +13,7 @@ namespace LaMarva1._0.Clases
         #region Declaraciones
         Clases.EstadisticasGuerrero guerrero = new EstadisticasGuerrero();
         SqlCeConnection conexion = new SqlCeConnection(ConfigurationManager.ConnectionStrings["LaMarva1._0.Properties.Settings.MordorConnectionString"].ToString());
-        SqlCeCommand comando;
-        SqlCeDataReader valores;
-        string _consulta;
+
         int vidaMediaGuerrero;
         int vidaMaxGuerrero;
         int salvacionVeneno;
@@ -31,55 +29,39 @@ namespace LaMarva1._0.Clases
 
         public void llenarComboArmas(ComboBox _Combo)
         {
-            int f = 0;
-            _consulta = "select Arma_Nombre from Armas";
-            comando = new SqlCeCommand(_consulta, conexion);
-            conexion.Open();
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            valores = comando.ExecuteReader();
+            var armas = from arma in mordorctxt.Armas
+                        select arma.Arma_Nombre;
 
-            while (valores.Read())
-            {
+            _Combo.Items.Add(armas);
 
-
-                _Combo.Items.Insert(f, valores["Arma_Nombre"].ToString());
-
-
-                f = f + 1;
-            }
-            conexion.Close();
+            mordorctxt.Connection.Close();
         }
 
         public void llenarComboArmaduras(ComboBox _Combo)
         {
-            int f = 0;
-            _consulta = "select Armadura_Nombre from Armaduras";
-            comando = new SqlCeCommand(_consulta, conexion);
-            conexion.Open();
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            valores = comando.ExecuteReader();
+            var armaduras = from armadura in mordorctxt.Armaduras
+                            select armadura.Armadura_Nombre;
 
-            while (valores.Read())
-            {
+            _Combo.Items.Add(armaduras);
 
-
-                _Combo.Items.Insert(f, valores["Armadura_Nombre"].ToString());
-
-
-                f = f + 1;
-            }
-            conexion.Close();
+            mordorctxt.Connection.Close();
         }
 
         public void almacenarPnj(string _clase, string _nivel, string _nombre, string _alineam, string _arma, string _armadura, string _escudo, string _ruta, string _ca, string _atqArma)
         {
             if (_clase == "Guerrero")
             {
+                MordorContext mordorctxt = new MordorContext(conexion);
+
                 int nivel = Convert.ToInt32(_nivel);
                 int ca = Convert.ToInt32(_ca);
                 int caPos = 12;
-               
                 int atq = 12;
+
                 vidaMediaGuerrero = guerrero.vidaMedia(nivel);
                 vidaMaxGuerrero = guerrero.vidaMaxima(nivel);
                 salvacionVeneno = guerrero.salvacionVeneno(nivel);
@@ -93,17 +75,36 @@ namespace LaMarva1._0.Clases
                 movimientoGuerrero = 10;
                 //revisar por si devuelve 0
 
-                _consulta = "insert into Pnj values ('" + _nombre + "','" + _clase + "'," + nivel +",'" + _alineam + "','" + _arma + "','" +
-                            _armadura + "','" + _escudo + "'," + ca + "," + caPos + "," + vidaMediaGuerrero + "," + vidaMaxGuerrero + ",'" +
-                            _atqArma + "'," + atq + "," + salvacionVeneno + "," + salvacionVaritas + "," + salvacionPetrif + "," + salvacionAliDrag + "," + salvacionSorti +
-                            "," + valorPX + "," + movimientoGuerrero + "," + tesoro + ",'" + texto + "','" + _ruta + "')";
+                foreach (var pnj in mordorctxt.Pnj)
+                {
+                    pnj.Pnj_Nombre = _nombre;
+                    pnj.Pnj_Clase = _clase;
+                    pnj.Pnj_Nivel = nivel;
+                    pnj.Pnj_Alineamiento = _alineam;
+                    pnj.Pnj_Arma = _arma;
+                    pnj.Pnj_Armadura = _armadura;
+                    pnj.Pnj_Escudo = _escudo;
+                    pnj.Pnj_CA_Neg = ca;
+                    pnj.Pnj_CA_Pos = caPos;
+                    pnj.Pnj_Vida_Med = vidaMediaGuerrero;
+                    pnj.Pnj_Vida_Max = vidaMaxGuerrero;
+                    pnj.Pnj_Ataque_Arma = _atqArma;
+                    pnj.Pnj_Ataque = atq;
+                    pnj.Pnj_S_Veneno = salvacionVeneno;
+                    pnj.Pnj_S_Varitas = salvacionVaritas;
+                    pnj.Pnj_S_Petrif = salvacionPetrif;
+                    pnj.Pnj_S_AliDrag = salvacionAliDrag;
+                    pnj.Pnj_S_Sorti = salvacionSorti;
+                    pnj.Pnj_PX = valorPX;
+                    pnj.Pnj_Mov = movimientoGuerrero;
+                    pnj.Pnj_Tesoro = tesoro;
+                    pnj.Pnj_Texto = texto;
+                    pnj.Pnj_Ruta = _ruta;
 
-                comando = new SqlCeCommand(_consulta, conexion);
+                    mordorctxt.Pnj.InsertOnSubmit(pnj);
+                }
 
-                conexion.Open();
-                comando.ExecuteNonQuery();
-
-                conexion.Close();
+                mordorctxt.Connection.Close();
             }
  
         }
@@ -112,80 +113,60 @@ namespace LaMarva1._0.Clases
                                Label _px, Label _mov, Label _tesoro, Label _arma, Label _veneno,
                                Label _varitas, Label _petrif, Label _aliDrag, Label _sorti, PictureBox _imagen, Label _texto)
         {
-            _consulta = "select Pnj_Nombre, Pnj_Clase, Pnj_Nivel," +
-                                 "Pnj_Alineamiento, Pnj_Arma, Pnj_Armadura, Pnj_Escudo, Pnj_CA_Neg, Pnj_Vida_Med," +
-                                 "Pnj_S_Veneno, Pnj_S_Varitas, Pnj_S_Petrif, Pnj_S_AliDrag, " +
-                                 "Pnj_S_Sorti, Pnj_PX, Pnj_Mov, Pnj_Ataque_Arma, " +
-                                 "Pnj_Tesoro, Pnj_Texto, Pnj_Ruta from Pnj where Pnj_Nombre = '" + _nombrecb + "'";
-            comando = new SqlCeCommand(_consulta, conexion);
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            conexion.Open();
+            var pnjs = from pnj in mordorctxt.Pnj
+                       where pnj.Pnj_Nombre.Contains(_nombrecb)
+                       select pnj;
 
-            valores = comando.ExecuteReader();
-
-            while (valores.Read())
+            foreach (var pnj in pnjs)
             {
-
-                _nombre.Text = "- " + valores["Pnj_Nombre"].ToString() + " -";
-                _clase.Text = valores["Pnj_Clase"].ToString();
-                _nivel.Text = valores["Pnj_Nivel"].ToString();
-                _aline.Text = valores["Pnj_Alineamiento"].ToString();
-                _vida.Text = valores["Pnj_Vida_Med"].ToString();
-                _ca.Text = valores["Pnj_CA_Neg"].ToString();
-                _px.Text = valores["Pnj_PX"].ToString();
-                //_dg.Text = valores["Criatura_Ataque_II"].ToString();
-                _mov.Text = valores["Pnj_Mov"].ToString();
-                _tesoro.Text = valores["Pnj_Tesoro"].ToString();
-                _arma.Text = valores["Pnj_Arma"].ToString() + " (" + valores["Pnj_Ataque_Arma"].ToString() + ")";
-                _veneno.Text = valores["Pnj_S_Veneno"].ToString();
-                _varitas.Text = valores["Pnj_S_Varitas"].ToString();
-                _petrif.Text = valores["Pnj_S_Petrif"].ToString();
-                _aliDrag.Text = valores["Pnj_S_AliDrag"].ToString();
-                _sorti.Text = valores["Pnj_S_Sorti"].ToString();
-                _texto.Text = valores["Pnj_Texto"].ToString();
-                _imagen.ImageLocation = valores["Pnj_Ruta"].ToString();
+                _nombre.Text = pnj.Pnj_Nombre;
+                _clase.Text = pnj.Pnj_Clase;
+                _nivel.Text = pnj.Pnj_Nivel.ToString();
+                _aline.Text = pnj.Pnj_Alineamiento;
+                _vida.Text = pnj.Pnj_Vida_Med.ToString();
+                _ca.Text = pnj.Pnj_CA_Neg.ToString();
+                _px.Text = pnj.Pnj_PX.ToString();
+                _mov.Text = pnj.Pnj_Mov.ToString();
+                _tesoro.Text = pnj.Pnj_Tesoro.ToString();
+                _arma.Text = pnj.Pnj_Arma;
+                _veneno.Text = pnj.Pnj_S_Veneno.ToString();
+                _varitas.Text = pnj.Pnj_S_Varitas.ToString();
+                _petrif.Text = pnj.Pnj_S_Petrif.ToString();
+                _aliDrag.Text = pnj.Pnj_S_AliDrag.ToString();
+                _sorti.Text = pnj.Pnj_S_Sorti.ToString();
+                _texto.Text = pnj.Pnj_Texto;
+                _imagen.ImageLocation = pnj.Pnj_Ruta;
             }
-            conexion.Close();
+
+            mordorctxt.Connection.Close();
         }
 
         public string obtenerCA(string _armaduraNombre)
         {
-            string _caArm = "";
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            _consulta = "select Armadura_CA from Armaduras where Armadura_Nombre = '" + _armaduraNombre + "'";
-            comando = new SqlCeCommand(_consulta, conexion);
+            var armadurasCA = from armadura in mordorctxt.Armaduras
+                              where armadura.Armadura_Nombre.Contains(_armaduraNombre)
+                              select armadura.Armadura_CA;
 
-            conexion.Open();
+            mordorctxt.Connection.Close();
 
-            valores = comando.ExecuteReader();
-
-            while (valores.Read())
-            {
-                _caArm = valores["Armadura_CA"].ToString();
-            }
-            conexion.Close();
-
-            return _caArm;
+            return armadurasCA.ToString();
         }
 
         public string obtenerAtqArma(string _armaNombre)
         {
-            string _armaDanio = "";
-            _consulta = "select Arma_Danio from Armas where Arma_Nombre = '" + _armaNombre + "'";
+            MordorContext mordorctxt = new MordorContext(conexion);
 
-            comando = new SqlCeCommand(_consulta, conexion);
+            var armaDanio = from arma in mordorctxt.Armas
+                            where arma.Arma_Nombre.Contains(_armaNombre)
+                            select arma.Arma_Danio;
 
-            conexion.Open();
+            mordorctxt.Connection.Close();
 
-            valores = comando.ExecuteReader();
-
-            while (valores.Read())
-            {
-                _armaDanio = valores["Arma_Danio"].ToString();
-            }
-            conexion.Close();
-
-            return _armaDanio;
+            return armaDanio.ToString();
         }
 
         public void llenarComboPnj(ComboBox _Combo)
@@ -195,24 +176,8 @@ namespace LaMarva1._0.Clases
             var todosPnj = from pnj in mordorCtxt.Pnj select pnj.Pnj_Nombre;
 
             _Combo.DataSource = todosPnj;
-            //int f = 0;
-            //_consulta = "select Pnj_Nombre from Pnj";
-            //comando = new SqlCeCommand(_consulta, conexion);
-            //conexion.Open();
 
-            //valores = comando.ExecuteReader();
-
-            //while (valores.Read())
-            //{
-
-
-            //    _Combo.Items.Insert(f, valores["Pnj_Nombre"].ToString());
-
-
-            //    f = f + 1;
-            //}
-            //conexion.Close();
-
+            mordorCtxt.Connection.Close();
         }
     }
 }
