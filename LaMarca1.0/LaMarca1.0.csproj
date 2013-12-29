@@ -69,6 +69,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -137,9 +138,7 @@
     <Compile Include="Forms\formPnj.Designer.cs">
       <DependentUpon>formPnj.cs</DependentUpon>
     </Compile>
-    <Compile Include="MordorContext.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MordorContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\formCriaturasPersonalizadas.resx">
@@ -200,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CalaveraIcono.ico" />
+    <Resource Include="Resources\flag.png" />
     <None Include="Resources\La Puerta Negra.jpg" />
     <None Include="Imagenes API\RobledaMap.jpg" />
     <None Include="Imagenes API\Aboleth.jpg" />

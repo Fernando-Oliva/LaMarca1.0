@@ -5,8 +5,13 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Windows;
 using System.Windows.Forms;
 using System.IO;
+using LaMarva1._0.Properties;
+//using Microsoft.VisualBasic.Devices;
+using System.Windows.Input;
+
 
 namespace LaMarva1._0
 {
@@ -252,6 +257,24 @@ namespace LaMarva1._0
             Localizacion lugar = new Localizacion(pPuertaNegra.Name.ToString());
 
             lugar.Show();
+        }
+
+
+        private void panel44_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            int x = e.Location.X;
+
+            int y = e.Location.Y;
+
+            PictureBox pbBox = new PictureBox();
+
+            pbBox.Location = new Point(x - 4, y - 15);
+            pbBox.Size = new Size(20, 20);
+            pbBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbBox.Image = Resources.flag;
+            pbBox.BringToFront();
+            panel44.Controls.Add(pbBox);
+            pbBox.Visible = true;
         }
 
     }
